@@ -8,8 +8,9 @@ export default function Email() {
 				alt="Instagram"
 				width={30}
 				height={30}
+				className="md:w-[30px] 2xl:w-[50px]"
 			/>
-			<div className='flex flex-col tracking-widest text-[12px]/[13px]'>
+			<div className='flex flex-col tracking-widest text-[12px]/[13px] md:text-xs 2xl:text-2xl/[26px]'>
 				<span className="font-bold">aceropilatesstudio</span>
 				<span className="font-light  tracking-[.82em]">gmail.com</span>
 			</div>
