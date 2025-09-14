@@ -1,8 +1,8 @@
 import Image from 'next/image';
-import Address from './Address';
-import Email from './Email';
-import Instagram from './Instagram';
-import MainAceroBottom from './MainAceroBottom';
+import Address from './shared/Address';
+import Email from './shared/Email';
+import Instagram from './shared/Instagram';
+import MainAceroBottom from './shared/MainAceroBottom';
 export default function HomeSection() {
 
 	return (
