@@ -3,7 +3,7 @@ export default function Address() {
 
 	return (
 		<div>
-			<span className="font-medium text-[8px]/[16px] tracking-[.25em]">602 - 721 - 291</span>
+			<span className="font-medium text-[8px]/[16px] md:text-xs tracking-[.25em]">602 - 721 - 291</span>
 
 			<div className='flex gap-5'>
 				<span className="font-light tracking-widest">
