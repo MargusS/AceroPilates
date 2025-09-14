@@ -43,11 +43,11 @@ export default function ScrollNav() {
 
 			style={{ top: isFixed ? offsetTop : centerTop }}
 		>
-			<a href="#" className=" text-metal-300 hover:text-gray-300 transition text-[9px]/[9px] md:text-xs 2xl:text-lg font-bold">EQUIPO</a>
-			<a href="#" className=" text-metal-300 hover:text-gray-300 transition text-[9px]/[9px] md:text-xs 2xl:text-lg font-bold">ESPACIO</a>
-			<a href="#" className=" text-metal-300 hover:text-gray-300 transition text-[9px]/[9px] md:text-xs 2xl:text-lg font-bold">SERVICIOS</a>
-			<a href="#" className=" text-metal-300 hover:text-gray-300 transition text-[9px]/[9px] md:text-xs 2xl:text-lg font-bold">TARIFAS</a>
-			<a href="#" className=" text-metal-300 hover:text-gray-300 transition text-[9px]/[9px] md:text-xs 2xl:text-lg font-bold">CONTACTO</a>
+			<a href="#" className=" text-metal-300 hover:text-gray-300 transition text-[9px]/[9px] md:text-xs 2xl:text-base font-bold">EQUIPO</a>
+			<a href="#" className=" text-metal-300 hover:text-gray-300 transition text-[9px]/[9px] md:text-xs 2xl:text-base font-bold">ESPACIO</a>
+			<a href="#" className=" text-metal-300 hover:text-gray-300 transition text-[9px]/[9px] md:text-xs 2xl:text-base font-bold">SERVICIOS</a>
+			<a href="#" className=" text-metal-300 hover:text-gray-300 transition text-[9px]/[9px] md:text-xs 2xl:text-base font-bold">TARIFAS</a>
+			<a href="#" className=" text-metal-300 hover:text-gray-300 transition text-[9px]/[9px] md:text-xs 2xl:text-base font-bold">CONTACTO</a>
 		</nav>
 	);
 }
