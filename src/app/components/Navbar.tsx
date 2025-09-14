@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 
 export default function ScrollNav() {
-	const navHeight = 0;
+	const navHeight = 18;
 	const offsetTop = 40;
 	const [isFixed, setIsFixed] = useState(false);
 	const [navReady, setNavReady] = useState(false); // Control renderizado del nav
@@ -43,11 +43,11 @@ export default function ScrollNav() {
 
 			style={{ top: isFixed ? offsetTop : centerTop }}
 		>
-			<a href="#" className=" text-metal-300 hover:text-gray-300 transition text-[9px]/[9px] md:text-xs font-bold">EQUIPO</a>
-			<a href="#" className=" text-metal-300 hover:text-gray-300 transition text-[9px]/[9px] md:text-xs font-bold">ESPACIO</a>
-			<a href="#" className=" text-metal-300 hover:text-gray-300 transition text-[9px]/[9px] md:text-xs font-bold">SERVICIOS</a>
-			<a href="#" className=" text-metal-300 hover:text-gray-300 transition text-[9px]/[9px] md:text-xs font-bold">TARIFAS</a>
-			<a href="#" className=" text-metal-300 hover:text-gray-300 transition text-[9px]/[9px] md:text-xs font-bold">CONTACTO</a>
+			<a href="#" className=" text-metal-300 hover:text-gray-300 transition text-[9px]/[9px] md:text-xs 2xl:text-lg font-bold">EQUIPO</a>
+			<a href="#" className=" text-metal-300 hover:text-gray-300 transition text-[9px]/[9px] md:text-xs 2xl:text-lg font-bold">ESPACIO</a>
+			<a href="#" className=" text-metal-300 hover:text-gray-300 transition text-[9px]/[9px] md:text-xs 2xl:text-lg font-bold">SERVICIOS</a>
+			<a href="#" className=" text-metal-300 hover:text-gray-300 transition text-[9px]/[9px] md:text-xs 2xl:text-lg font-bold">TARIFAS</a>
+			<a href="#" className=" text-metal-300 hover:text-gray-300 transition text-[9px]/[9px] md:text-xs 2xl:text-lg font-bold">CONTACTO</a>
 		</nav>
 	);
 }
