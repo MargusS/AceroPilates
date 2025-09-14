@@ -1,62 +1,53 @@
 "use client";
-import { useState, useEffect, useRef } from "react";
+import { useEffect, useState } from "react";
 
 export default function ScrollNav() {
-	const [topPosition, setTopPosition] = useState(0);
-	const [maxTop, setMaxTop] = useState(0);
-	const navHeight = 60;
-	const minTop = 20;
-	const rafId = useRef<number | null>(null);
+  const navHeight = 20;
+  const offsetTop = 40;
+  const [isFixed, setIsFixed] = useState(false);
+  const [navReady, setNavReady] = useState(false); // Control renderizado del nav
+  const [centerTop, setCenterTop] = useState<number>(0);
 
-	useEffect(() => {
-		// Define maxTop solo en el cliente
-		setMaxTop(window.innerHeight / 2 - navHeight / 2);
+  useEffect(() => {
+    // Solo ejecuta en el cliente
+    const calcCenter = () => {
+      setCenterTop(window.innerHeight / 2 - navHeight / 2);
+      setNavReady(true);
+    };
+    calcCenter();
+    window.addEventListener("resize", calcCenter);
 
-		// Posición inicial:
-		setTopPosition(window.innerHeight / 2 - navHeight / 2);
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      if (scrollY >= centerTop - offsetTop) {
+        setIsFixed(true);
+      } else {
+        setIsFixed(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
 
-		const handleScroll = () => {
-			if (rafId.current) cancelAnimationFrame(rafId.current);
+    return () => {
+      window.removeEventListener("resize", calcCenter);
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [centerTop, navHeight, offsetTop]);
 
-			rafId.current = requestAnimationFrame(() => {
-				const scrollY = window.scrollY;
-				const scrollRange = 500;
-				let newTop =
-					maxTop - ((maxTop - minTop) * Math.min(scrollY, scrollRange)) / scrollRange;
+  // Renderiza nav solo cuando se conoce el valor real del top
+  if (!navReady) return null; // Alternativamente, un loader o un espacio vacío
 
-				newTop = Math.max(minTop, Math.min(maxTop, newTop));
-				setTopPosition(newTop);
-			});
-		};
-
-		window.addEventListener("scroll", handleScroll);
-		return () => {
-			if (rafId.current) cancelAnimationFrame(rafId.current);
-			window.removeEventListener("scroll", handleScroll);
-		};
-	}, [navHeight, minTop, maxTop]);
-
-	return (
-		<nav
-			className="fixed left-1/2 transform -translate-x-1/2 bg-white/10 backdrop-blur-md text-white font-medium text-sm md:text-base flex justify-around items-center py-3 px-8 rounded-xl z-50"
-			style={{ top: topPosition }}
-		>
-			{/* enlaces */}
-			<a href="#" className="px-3 hover:text-gray-300 transition">
-				ESPACIO
-			</a>
-			<a href="#" className="px-3 hover:text-gray-300 transition">
-				EQUIPO
-			</a>
-			<a href="#" className="px-3 hover:text-gray-300 transition">
-				SERVICIOS
-			</a>
-			<a href="#" className="px-3 hover:text-gray-300 transition">
-				TARIFAS
-			</a>
-			<a href="#" className="px-3 hover:text-gray-300 transition">
-				CONTACTO
-			</a>
-		</nav>
-	);
+  return (
+    <nav
+      className={isFixed
+        ? "fixed w-full left-1/2 transform -translate-x-1/2 bg-white/40 backdrop-blur-sm text-white font-medium text-sm flex justify-around items-center py-1 z-50"
+        : "absolute w-full left-1/2 transform -translate-x-1/2 bg-white/40 backdrop-blur-sm text-white font-medium text-sm flex justify-around items-center py-1 z-50"}
+      style={{ top: isFixed ? offsetTop : centerTop }}
+    >
+      <a href="#" className="px-1 hover:text-gray-300 transition text-xs">ESPACIO</a>
+      <a href="#" className="px-1 hover:text-gray-300 transition text-xs">EQUIPO</a>
+      <a href="#" className="px-1 hover:text-gray-300 transition text-xs">SERVICIOS</a>
+      <a href="#" className="px-1 hover:text-gray-300 transition text-xs">TARIFAS</a>
+      <a href="#" className="px-1 hover:text-gray-300 transition text-xs">CONTACTO</a>
+    </nav>
+  );
 }
