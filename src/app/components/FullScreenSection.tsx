@@ -11,10 +11,12 @@ export default function FullScreenSection({ bgImage, imagePosition, children }: 
 					layout="fill"
 					objectFit="cover"
 					objectPosition={imagePosition}
+					quality={100}
+					sizes="100vw"
+					className="z-0 select-none pointer-events-none"
 					priority
-					className="z-0"
 				/>
-				<div className="absolute inset-0 bg-black/20 z-10" />
+				<div className="absolute inset-0 bg-black/10 z-10" />
 				{children}
 			</section >
 		</main>
