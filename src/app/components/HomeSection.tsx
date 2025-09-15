@@ -47,7 +47,7 @@ export default function HomeSection() {
 					<span>PILATES</span>
 					<span>EMBARAZO</span>
 				</div>
-				<MainAcero  imageOrientation="" imagePosition="self-end" rowStart={6} />
+				<MainAcero  imageLayout="row-start-6 md:row-start-8 self-end"/>
 			</div>
 
 		</div>
