@@ -34,9 +34,6 @@ export default function HomeSection() {
 				<div className="row-start-4 2xl:row-start-5 col-span-2 self-end place-self-start pl-5 md:pl-15 text-white text-[8px]/[12px]">
 					<Email />
 				</div>
-				<div className="row-start-3 2xl:row-start-4 col-start-3 self-start md:self-end place-self-start md:place-self-end text-white text-[8px]/[12px] ">
-					<Instagram />
-				</div>
 				<div className='row-start-5 md:row-start-6 col-span-3 self-end flex justify-center items-center text-center gap-4 md:gap-12 tracking-widest'>
 					<span>PILATES</span>
 					<span>SUELO</span>
