@@ -13,7 +13,7 @@ export default function ScrollNav() {
 
 			let offsetTop;
 			if (width < 375) offsetTop = 30;
-			else if (width < 768) offsetTop = 40;
+			else if (width < 768) offsetTop = 37;
 			else if (width < 1536) offsetTop = 50;
 			else offsetTop = 60;
 
@@ -48,7 +48,7 @@ export default function ScrollNav() {
 	if (typeof window !== "undefined") {
 		const width = window.innerWidth;
 		if (width < 375) offsetTopFinal = 30;
-		else if (width < 768) offsetTopFinal = 40;
+		else if (width < 768) offsetTopFinal = 37;
 		else if (width < 1536) offsetTopFinal = 70;
 		else offsetTopFinal = 80;
 	} else {
