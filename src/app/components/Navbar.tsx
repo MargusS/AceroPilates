@@ -3,51 +3,78 @@ import { useEffect, useState } from "react";
 
 export default function ScrollNav() {
 	const navHeight = 18;
-	const offsetTop = 40;
 	const [isFixed, setIsFixed] = useState(false);
-	const [navReady, setNavReady] = useState(false); // Control renderizado del nav
-	const [centerTop, setCenterTop] = useState<number>(0);
+	const [navReady, setNavReady] = useState(false);
+	const [centerTop, setCenterTop] = useState(0);
 
 	useEffect(() => {
-		// Solo ejecuta en el cliente
-		const calcCenter = () => {
-			setCenterTop(window.innerHeight / 2 - navHeight / 2);
-			setNavReady(true);
-		};
-		calcCenter();
-		window.addEventListener("resize", calcCenter);
+		const calculateNavCenter = () => {
+			const width = window.innerWidth;
 
-		const handleScroll = () => {
-			const scrollY = window.scrollY;
-			if (scrollY >= centerTop - offsetTop) {
+			let offsetTop;
+			if (width < 375) offsetTop = 30;
+			else if (width < 768) offsetTop = 40;
+			else if (width < 1536) offsetTop = 50;
+			else offsetTop = 60;
+
+			const center = window.innerHeight / 2 - navHeight / 2;
+
+			setCenterTop(center);
+			setNavReady(true);
+
+			if (window.scrollY >= center - offsetTop) {
 				setIsFixed(true);
 			} else {
 				setIsFixed(false);
 			}
 		};
-		window.addEventListener("scroll", handleScroll);
+
+		calculateNavCenter();
+
+		window.addEventListener("scroll", calculateNavCenter);
+		window.addEventListener("resize", calculateNavCenter);
 
 		return () => {
-			window.removeEventListener("resize", calcCenter);
-			window.removeEventListener("scroll", handleScroll);
+			window.removeEventListener("scroll", calculateNavCenter);
+			window.removeEventListener("resize", calculateNavCenter);
 		};
-	}, [centerTop, navHeight, offsetTop]);
+	}, []);
 
-	// Renderiza nav solo cuando se conoce el valor real del top
-	if (!navReady) return null; // Alternativamente, un loader o un espacio vacío
+	if (!navReady) return null;
+
 	const positionClass = isFixed ? "fixed" : "absolute";
+
+	let offsetTopFinal;
+	if (typeof window !== "undefined") {
+		const width = window.innerWidth;
+		if (width < 375) offsetTopFinal = 30;
+		else if (width < 768) offsetTopFinal = 40;
+		else if (width < 1536) offsetTopFinal = 70;
+		else offsetTopFinal = 80;
+	} else {
+		offsetTopFinal = 40;
+	}
 
 	return (
 		<nav
 			className={`${positionClass} w-full left-1/2 transform -translate-x-1/2 bg-white/90 backdrop-blur-sm text-white font-medium text-sm flex justify-center items-center gap-7 py-1 z-50`}
-
-			style={{ top: isFixed ? offsetTop : centerTop }}
+			style={{ top: isFixed ? offsetTopFinal : centerTop }}
 		>
-			<a href="#" className=" text-metal-300 hover:text-gray-300 transition text-[9px]/[9px] md:text-xs 2xl:text-base font-bold">EQUIPO</a>
-			<a href="#" className=" text-metal-300 hover:text-gray-300 transition text-[9px]/[9px] md:text-xs 2xl:text-base font-bold">ESPACIO</a>
-			<a href="#" className=" text-metal-300 hover:text-gray-300 transition text-[9px]/[9px] md:text-xs 2xl:text-base font-bold">SERVICIOS</a>
-			<a href="#" className=" text-metal-300 hover:text-gray-300 transition text-[9px]/[9px] md:text-xs 2xl:text-base font-bold">TARIFAS</a>
-			<a href="#" className=" text-metal-300 hover:text-gray-300 transition text-[9px]/[9px] md:text-xs 2xl:text-base font-bold">CONTACTO</a>
+			<a href="#" className="text-metal-300 hover:text-gray-300 transition text-[9px]/[9px] md:text-xs 2xl:text-base font-bold">
+				EQUIPO
+			</a>
+			<a href="#" className="text-metal-300 hover:text-gray-300 transition text-[9px]/[9px] md:text-xs 2xl:text-base font-bold">
+				ESPACIO
+			</a>
+			<a href="#" className="text-metal-300 hover:text-gray-300 transition text-[9px]/[9px] md:text-xs 2xl:text-base font-bold">
+				SERVICIOS
+			</a>
+			<a href="#" className="text-metal-300 hover:text-gray-300 transition text-[9px]/[9px] md:text-xs 2xl:text-base font-bold">
+				TARIFAS
+			</a>
+			<a href="#" className="text-metal-300 hover:text-gray-300 transition text-[9px]/[9px] md:text-xs 2xl:text-base font-bold">
+				CONTACTO
+			</a>
 		</nav>
 	);
 }
