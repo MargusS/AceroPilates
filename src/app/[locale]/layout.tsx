@@ -1,8 +1,7 @@
-import type { Metadata } from "next";
-import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { routing } from '@/i18n/routing';
-import { setRequestLocale } from 'next-intl/server'
-import localFont from 'next/font/local'
+import type { Metadata } from "next";
+import { setRequestLocale } from 'next-intl/server';
+import localFont from 'next/font/local';
 import "../globals.css";
 
 type Props = {
