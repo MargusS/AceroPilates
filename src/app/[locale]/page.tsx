@@ -6,6 +6,9 @@ import HomeSection from '../components/HomeSection';
 import Navbar from '../components/Navbar';
 import SpaceSection from '../components/SpaceSection';
 import Instagram from '../components/shared/Instagram';
+import TeamSection from '../components/TeamSection';
+import ServicesSection from '../components/ServicesSection';
+import Image from 'next/image';
 export default function Home({ params }: { params: Promise<{ locale: string }> }) {
 
 	const { locale } = use(params);
@@ -19,6 +22,19 @@ export default function Home({ params }: { params: Promise<{ locale: string }> }
 			<Instagram />
 			<FullScreenBackground bgImage="/images/image00000.jpg" imagePosition="center"><HomeSection /></FullScreenBackground>
 			<FullScreenBackground bgImage="/images/image00004.jpg" imagePosition="right"><SpaceSection /></FullScreenBackground>
+			<div className="relative overflow-hidden">
+				<FullScreenBackground bgImage="/images/image00003.jpg" imagePosition="center"><TeamSection /></FullScreenBackground>
+				<div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/3 z-10">
+					<Image
+						src="/logos/circle-metal.png"
+						alt="Pilates Studio Dot Matrix"
+						width={1280}
+						height={480}
+						className="w-[110vw] max-w-lg md:w-[40vw] md:max-w-[600px] opacity-70"
+					/>
+				</div>
+				<FullScreenBackground bgImage="/images/image00000.jpg" imagePosition="center"><ServicesSection /></FullScreenBackground>
+			</div>
 		</main>
 	);
 }
