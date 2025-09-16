@@ -10,7 +10,7 @@ export default function MainAcero({ imageLayout}: { imageLayout: string;}) {
 				height={240}
 				quality={100}
 				priority
-				className="w-[85vw] max-w-lg md:max-w-[450px] 2xl:max-w-[625px]"
+				className="w-[85vw] max-w-lg md:max-w-[450px] 2xl:max-w-[550px]"
 			/>
 		</div>
 	);
