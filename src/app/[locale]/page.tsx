@@ -1,10 +1,11 @@
 import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { use } from 'react';
-import FullScreenSection from '../components/shared/FullScreenSection';
+import FullScreenBackground from '../components/shared/FullScreenBackground';
 import HomeSection from '../components/HomeSection';
 import Navbar from '../components/Navbar';
 import SpaceSection from '../components/SpaceSection';
+import Instagram from '../components/shared/Instagram';
 export default function Home({ params }: { params: Promise<{ locale: string }> }) {
 
 	const { locale } = use(params);
@@ -15,8 +16,9 @@ export default function Home({ params }: { params: Promise<{ locale: string }> }
 	return (
 		<main className="">
 			<Navbar />
-			<FullScreenSection bgImage="/images/image00000.jpg" imagePosition="center"><HomeSection /></FullScreenSection>
-			<FullScreenSection bgImage="/images/image00004.jpg" imagePosition="right"><SpaceSection /></FullScreenSection>
+			<Instagram />
+			<FullScreenBackground bgImage="/images/image00000.jpg" imagePosition="center"><HomeSection /></FullScreenBackground>
+			<FullScreenBackground bgImage="/images/image00004.jpg" imagePosition="right"><SpaceSection /></FullScreenBackground>
 		</main>
 	);
 }
