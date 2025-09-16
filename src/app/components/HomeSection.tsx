@@ -28,7 +28,7 @@ export default function HomeSection() {
 
 
 			<div className="md:row-span-3 grid grid-rows-6 md:grid-rows-8 grid-cols-3 justify-items-center text-white text-[8px]/[12px] md:text-sm font-light w-full">
-				<div className="row-start-2 2xl:row-start-3 col-span-2 self-end place-self-start pl-5 md:pl-15 text-white text-[8px]/[12px] md:text-xs 2xl:text-base">
+				<div className="row-start-2 2xl:row-start-3 col-span-2 self-end place-self-start pl-5 md:pl-15 text-white text-[8px]/[12px] 2xl:text-xs">
 					<Address />
 				</div>
 				<div className="row-start-4 2xl:row-start-5 col-span-2 self-end place-self-start pl-5 md:pl-15 text-white text-[8px]/[12px]">

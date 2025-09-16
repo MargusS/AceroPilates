@@ -10,7 +10,7 @@ export default function Email() {
 				height={30}
 				className="md:w-[30px] 2xl:w-[40px]"
 			/>
-			<div className='flex flex-col tracking-widest text-[12px]/[13px] md:text-xs 2xl:text-xl/[22px]'>
+			<div className='flex flex-col tracking-widest text-[12px]/[13px] md:text-xs 2xl:text-lg/[20px]'>
 				<span className="font-bold">aceropilatesstudio</span>
 				<span className="font-light  tracking-[.82em]">gmail.com</span>
 			</div>
