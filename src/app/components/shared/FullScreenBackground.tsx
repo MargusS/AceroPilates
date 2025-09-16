@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function FullScreenBackground({ bgImage, imagePosition, children }: { bgImage: string; imagePosition: string; children: React.ReactNode }) {
 
 	return (
-		<section className="relative w-full h-screen overflow-hidden">
+		<section className="relative w-full h-screen">
 			<Image
 				src={bgImage}
 				alt="Fondo"
@@ -15,7 +15,7 @@ export default function FullScreenBackground({ bgImage, imagePosition, children 
 				className="z-0 select-none pointer-events-none"
 				priority
 			/>
-			<div className="absolute inset-0 bg-black/10 z-10" />
+			<div className="absolute inset-0 bg-black/20 z-10" />
 			{children}
 		</section >
 	);

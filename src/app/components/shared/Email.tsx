@@ -2,7 +2,7 @@ import Image from 'next/image';
 export default function Email() {
 
 	return (
-		<div className="flex items-center gap-1 ">
+		<div className="flex items-center gap-1 text-white text-[8px]/[12px]">
 			<Image
 				src="/icons/alt.svg"
 				alt="Instagram"
