@@ -17,8 +17,8 @@ export default function TeamSection() {
 				className="absolute right-1/10 top-60 flex flex-col items-end space-y-6 md:space-y-8 xl:space-y-10 gap-5"
 			>
 				<div className='text-white text-[12px]/[12px] md:text-[13px]/[13px] 2xl:text-[14px]/[14px] tracking-wide flex flex-col items-end gap-1 rotate-90 text-center translate-x-11 md:translate-x-12 xl:translate-x-13'>
-					<p className='w-fit bg-metal-500 font-normal px-1 py-1 text-right'>DANIEL</p>
-					<p className='bg-metal-500 font-light px-1 py-1 tracking-[.5em]'>FERNÁNDEZ</p>
+					<p className='inline-block leading-none w-fit bg-metal-500 font-normal px-1 py-1 text-right'>DANIEL</p>
+					<p className='inline-block leading-none bg-metal-500 font-light px-1 py-1 tracking-[.5em]'>FERNÁNDEZ</p>
 				</div>
 
 				<p className="text-white font-light text-[10px]/[12px] md:text-[13px]/[13px] 2xl:text-[14px]/[14px] tracking-wide" >BAILARÍN Y FUNDADOR</p>
