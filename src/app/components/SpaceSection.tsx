@@ -4,8 +4,10 @@ export default function SpaceSection() {
 
 	return (
 		<div className="relative z-20 h-full w-full px-4">
-			<MainAcero imageLayout="rotate-x-180 self-start" />
-			<MainAcero imageLayout="opacity-50 self-end" />
+			{/* <MainAcero imageLayout="rotate-x-180 self-start" />
+			<MainAcero imageLayout="opacity-50 self-end" /> */}
+			<MainAcero imageLayout="rotate-x-180 opacity-50 self-start" />
+			<MainAcero imageLayout=" self-end" />
 			<div className='my-12 md:my-15 flex flex-col gap-10 md:gap-14 2xl:gap-20 align-center justify-center text-[12px]/[12px] md:text-sm font-light w-full'>
 				<h3 className="text-center text-metal-400 font-semibold text-xl bg-white w-[30vw] md:w-[15vw] 2xl:w-[10vw] mx-auto" >ESPACIO</h3>
 				<div className='flex flex-col items-center text-white font-light text-[9px]/[11px] md:text-[10px]/[12px] 2xl:text-[13px]/[14px] tracking-widest'>
