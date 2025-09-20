@@ -1,22 +1,61 @@
 
-import Image from 'next/image';
-export default function FullScreenBackground({ bgImage, imagePosition, children }: { bgImage: string; imagePosition: string; children: React.ReactNode }) {
+import Image, { getImageProps } from 'next/image';
+export default function FullScreenBackground({
+	bgImageMobile,
+	bgImageDesktop,
+	alt = "Fondo",
+	imagePosition = "center",
+	children
+}: {
+	bgImageMobile: string;
+	bgImageDesktop: string;
+	alt?: string;
+	imagePosition?: string;
+	children: React.ReactNode;
+}) {
+	const {
+		props: { srcSet: desktopSrcSet, ...desktopRest }
+	} = getImageProps({
+		src: bgImageDesktop,
+		alt,
+		width: 1440,
+		height: 1024,
+		sizes: "100vw",
+		quality: 100
+	});
 
+	// Props para mobile (ejemplo: 750x1334)
+	const {
+		props: { srcSet: mobileSrcSet, ...mobileRest }
+	} = getImageProps({
+		src: bgImageMobile,
+		alt,
+		width: 750,
+		height: 1334,
+		sizes: "100vw",
+		quality: 100
+	});
 	return (
 		<section className="relative w-full h-screen">
-			<Image
-				src={bgImage}
-				alt="Fondo"
-				layout="fill"
-				objectFit="cover"
-				objectPosition={imagePosition}
-				quality={100}
-				sizes="100vw"
-				className="z-0 select-none pointer-events-none"
-				priority
-			/>
-			<div className="absolute inset-0 bg-black/20 z-10" />
+			<picture>
+				<source media="(min-width: 768px)" srcSet={desktopSrcSet} />
+				<source media="(max-width: 767px)" srcSet={mobileSrcSet} />
+				<img
+					{...desktopRest}
+					alt={alt}
+					style={{
+						objectFit: "cover",
+						objectPosition: imagePosition,
+						width: "100%",
+						height: "100%",
+						position: "absolute",
+					}}
+				/>
+			</picture>
+			{/* <div className="absolute inset-0 bg-black/20 z-10" /> */}
 			{children}
 		</section >
 	);
 }
+
+
