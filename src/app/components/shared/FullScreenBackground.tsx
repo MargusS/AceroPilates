@@ -1,12 +1,14 @@
 
 import Image, { getImageProps } from 'next/image';
 export default function FullScreenBackground({
+	id,
 	bgImageMobile,
 	bgImageDesktop,
 	alt = "Fondo",
 	imagePosition = "center",
 	children
 }: {
+	id?: string;
 	bgImageMobile: string;
 	bgImageDesktop: string;
 	alt?: string;
@@ -36,7 +38,7 @@ export default function FullScreenBackground({
 		quality: 100
 	});
 	return (
-		<section className="relative w-full h-screen">
+		<section id={id} className="relative w-full h-screen">
 			<picture>
 				<source media="(min-width: 768px)" srcSet={desktopSrcSet} />
 				<source media="(max-width: 767px)" srcSet={mobileSrcSet} />
