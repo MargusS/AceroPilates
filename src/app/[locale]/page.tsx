@@ -30,7 +30,7 @@ export default function Home({ params }: { params: Promise<{ locale: string }> }
 						alt="Pilates Studio Dot Matrix"
 						width={1280}
 						height={480}
-						className="w-[110vw] max-w-lg md:w-[40vw] md:max-w-[600px] opacity-70"
+						className="w-[110vw] max-w-lg md:w-[40vw] md:max-w-[650px] opacity-70"
 					/>
 				</div>
 				<FullScreenBackground bgImageMobile="/images/image00000.jpg" bgImageDesktop="/images/image00000.jpg" imagePosition="center"><ServicesSection /></FullScreenBackground>
