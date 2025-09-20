@@ -4,18 +4,30 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --metal-000: #f5f5f5;
+  --metal-100: #c2c1c6;
+  --metal-200: #abafb9;
+  --metal-300: #8e9299;
+  --metal-400: #6e7177;
+  --metal-500: #4e5054;
+  --metal-600: #3a3b3d;
+  --metal-700: #262728;
+  --metal-800: #171718;
+  --metal-900: #0a0a0a;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-background: var(--metal-000);
+  --color-foreground: var(--metal-900);
+  --color-metal-100: var(--metal-100);
+  --color-metal-200: var(--metal-200);
+  --color-metal-300: var(--metal-300);
+  --color-metal-400: var(--metal-400);
+  --color-metal-500: var(--metal-500);
+  --color-metal-600: var(--metal-600);
+  --color-metal-700: var(--metal-700);
+  --color-metal-800: var(--metal-800);
+  --color-metal-900: var(--metal-900);
 }
 
 .font-dotmatrix {
@@ -24,6 +36,10 @@
 
 .font-tiny {
   font-family: var(--font-tiny);
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 body {

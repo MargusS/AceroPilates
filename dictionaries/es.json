@@ -1,0 +1,129 @@
+{
+  "LandingPage": {
+    "title": "Acero Pilates",
+	"subtitle": "Estudio",
+
+    "espacio": {
+      "description": "Acero Pilates Studio nació de la idea de crear en el barrio de Carabanchel un espacio diferente para quienes buscan cuidarse, y disfrutar de una experiencia completa de Pilates.Un estudio boutique de Pilates de máquinas ubicado en el barrio de Carabanchel, diseñado para ofrecer una experiencia integral y de alto nivel. Nuestro enfoque combina técnica, precisión y atención personalizada, creando un espacio donde cada clase se adapta a las necesidades y objetivos de cada alumno.Contamos con equipamiento profesional y un entorno cuidado, pensado para potenciar la práctica de Pilates y garantizar resultados óptimos tanto a nivel físico como mental. Cada sesión refleja nuestro compromiso con la calidad y la disciplina en la enseñanza del movimiento.",
+      "descripcionIA": "Acero Pilates Studio nació con la idea de crear en el barrio de Carabanchel un espacio único para quienes buscan cuidarse y disfrutar de una experiencia integral de Pilates. Somos un estudio boutique de Pilates de máquinas, diseñado para ofrecerte técnica, precisión y atención personalizada.",
+      "descripcionIA2": "Contamos con equipamiento profesional y un entorno cuidadosamente cuidado para potenciar tu práctica y garantizar resultados óptimos tanto a nivel físico como mental. Cada sesión se adapta a tus necesidades y objetivos, reflejando nuestro compromiso con la calidad y la disciplina en la enseñanza del movimiento.",
+      "mision": "Nuestro objetivo es proporcionar un espacio donde el bienestar corporal se desarrollen de manera integral. Con la mirada puesta en el futuro, aspiramos a expandirnos y replicar esta experiencia única en nuevos espacios.",
+      "misionIA": "Nuestro objetivo es ofrecer un espacio donde el bienestar corporal se desarrolle de manera integral. Mirando hacia el futuro, aspiramos a expandirnos y replicar esta experiencia única en nuevos espacios."
+    },
+
+    "equipo": {
+      "versionCompleta": [
+        "Daniel Fernández es bailarín y fundador de Acero Pilates Studio. Lleva más de 19 años vinculado al movimiento, con la danza como primera gran pasión y el motor de su carrera profesional.",
+        "Su camino lo llevó a descubrir el Pilates: primero como apoyo en su vida de bailarín y más tarde como una disciplina que transformó su forma de entender la salud y el bienestar.",
+        "Formado en el Conservatorio Superior de Danza María de Ávila, Daniel consolidó una base técnica y artística sólida. Posteriormente se certificó en Máster Pilates, integrando sus conocimientos de danza con una comprensión más profunda del movimiento.",
+        "Ha ampliado su preparación en Polestar Pilates, especializándose en embarazo y postparto, y en el Método Tad, donde adquirió experiencia en recuperación y fortalecimiento del suelo pélvico mediante el Winner Flow. Además, su paso por diversos centros de Pilates le ha dado una visión versátil y adaptable a las necesidades de cada alumno.",
+        "Hoy, desde Acero Pilates Studio, acompaña a sus alumnos en un proceso personalizado, uniendo técnica y sensibilidad para que cada persona encuentre funcionalidad en su cuerpo y disfrute en cada sesión."
+      ],
+      "versionCorta": [
+        "Daniel Fernández, bailarín y fundador de Acero Pilates Studio, lleva más de 19 años dedicado al movimiento, con la danza como su gran pasión y punto de partida.",
+        "El Pilates se convirtió después en la disciplina que transformó su visión del bienestar y que hoy comparte con sus alumnos, uniendo técnica, experiencia y sensibilidad.",
+        "Su objetivo es que cada persona descubra la funcionalidad en su cuerpo y disfrute en cada sesión."
+      ]
+    },
+
+    "servicios": {
+      "intro": "Clases reducidas de hasta 4 personas, garantizando una experiencia personalizada, exclusiva y cercana.",
+      "pilatesMaquina": {
+        "title": "Pilates Máquina (Reformer + Torre*)",
+        "description": "Las máquinas de Pilates están diseñadas para que cada movimiento sea más seguro y efectivo. El Reformer es una cama/carro con resortes que aporta resistencia y permite trabajar fuerza, flexibilidad y control postural de forma integral. La Torre añade variedad de ejercicios y precisión en el fortalecimiento. La combinación de ambas crea entrenamientos dinámicos, accesibles para principiantes y desafiantes para quienes ya tienen experiencia."
+      },
+      "niveles": {
+        "title": "Niveles*",
+        "description": "La base del método en Acero Pilates Studio es avanzar por niveles para garantizar una evolución adecuada.",
+        "lista": ["Inicial", "Intermedio", "Avanzado"]
+      },
+      "pilatesEmbarazo": {
+        "title": "Pilates Embarazo*",
+        "description": "Clases específicas para cada etapa del embarazo, centradas en fortalecer el suelo pélvico, liberar y movilizar las caderas y mejorar la postura. Ejercicios adaptados que favorecen la circulación, alivian tensiones y preparan el cuerpo para el parto y la recuperación postparto."
+      },
+      "clasesPrivadas": {
+        "title": "Clases Privadas*",
+        "description": "Sesiones 100% personalizadas en las que el instructor se dedica exclusivamente a tus necesidades y objetivos."
+      },
+      "bailarines": {
+        "title": "Bailarines*",
+        "description": "Entrenamientos diseñados para que el cuerpo sea más funcional y eficiente en la práctica de la danza."
+      }
+    },
+
+    "tarifas": {
+      "advertisement": "Mensualidades y Bonos canjeables en periodo de un mes desde la fecha de inicio de compra*",
+      "prueba": {
+        "title": "Clase de prueba",
+        "price": "10€",
+        "button": "Reservar clase de prueba"
+      },
+      "suelta": {
+        "title": "Clase suelta",
+        "price": "20€",
+        "button": "Reservar clase suelta"
+      },
+      "mensual": {
+        "title": "Mensualidad",
+        "subtitle": "(Sin plaza fija)",
+        "sesiones": {
+          "1": {
+            "title": "1 Sesión/Semana",
+            "price": "65€"
+          },
+          "2": {
+            "title": "2 Sesión/Semana",
+            "price": "120€"
+          },
+          "3": {
+            "title": "3 Sesión/Semana",
+            "price": "160€"
+          }
+        },
+        "button": "Suscribirse mensualmente"
+      },
+      "bonos": {
+        "title": "Bonos ",
+        "subtitle": "(Sin plaza fija)",
+        "sesiones": {
+          "5": {
+            "title": "5 sesiones",
+            "price": "95€"
+          },
+          "8": {
+            "title": "10sesiones",
+            "price": "180€"
+          }
+        },
+        "button": "Comprar bono"
+      },
+      "privadas": {
+        "title": "Clases privadas",
+        "sesiones": {
+          "1": {
+            "title": "Clase suelta",
+            "price": "40€"
+          },
+          "5": {
+            "title": "5 Sesiones",
+            "price": "210€"
+          },
+          "10": {
+            "title": "10 Sesiones",
+            "price": "390€"
+          }
+        },
+        "button": "Reservar clase privada"
+      }
+    },
+
+    "contacto": {
+      "title": "Contacto",
+      "description": "¿Tienes alguna duda o quieres más información? No dudes en ponerte en contacto con nosotros. Estaremos encantados de ayudarte.",
+      "phone": "+34 602 721 291",
+      "email": "aceropilatestudio@gmail.com",
+      "address": "Calle Camino Viejo de Leganes 23 bis, 28019, Madrid.",
+      "instagram": "@aceropilates"
+    }
+  }
+}
