@@ -60,20 +60,30 @@ export default function ScrollNav() {
 			className={`${positionClass} w-full left-1/2 transform -translate-x-1/2 bg-white/90 backdrop-blur-sm text-white font-medium text-[9px]/[9px] md:text-xs 2xl:text-sm flex justify-center items-center gap-7 py-1 z-50`}
 			style={{ top: isFixed ? offsetTopFinal : centerTop }}
 		>
-			<a href="#space" className="text-metal-300 hover:text-gray-300 transition font-bold">
-				ESPACIO
+			<a href="#space" className="inline-block leading-none text-metal-300 hover:text-gray-300 transition font-bold">
+				<span>
+					ESPACIO
+				</span>
 			</a>
-			<a href="#team" className="text-metal-300 hover:text-gray-300 transition font-bold">
-				EQUIPO
+			<a href="#team" className="inline-block leading-none text-metal-300 hover:text-gray-300 transition font-bold">
+				<span>
+					EQUIPO
+				</span>
 			</a>
-			<a href="#services" className="text-metal-300 hover:text-gray-300 transition font-bold">
-				SERVICIOS
+			<a href="#services" className="inline-block leading-none text-metal-300 hover:text-gray-300 transition font-bold">
+				<span>
+					SERVICIOS
+				</span>
 			</a>
-			<a href="#" className="text-metal-300 hover:text-gray-300 transition font-bold">
-				TARIFAS
+			<a href="#" className="inline-block leading-none text-metal-300 hover:text-gray-300 transition font-bold">
+				<span>
+					TARIFAS
+				</span>
 			</a>
-			<a href="#" className="text-metal-300 hover:text-gray-300 transition font-bold">
-				CONTACTO
+			<a href="#" className="inline-block leading-none text-metal-300 hover:text-gray-300 transition font-bold">
+				<span>
+					CONTACTO
+				</span>
 			</a>
 		</nav>
 	);
