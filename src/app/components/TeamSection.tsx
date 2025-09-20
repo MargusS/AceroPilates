@@ -14,14 +14,14 @@ export default function TeamSection() {
 				/>
 			</div>
 			<div className='absolute top-70 left-1/10'>
-				<span className="text-center text-metal-400 font-semibold text-xl bg-white w-[30vw] md:w-[15vw] 2xl:w-[10vw] mx-auto px-5" >EQUIPO</span>
+				<h3 className="text-center text-metal-400 font-semibold text-xl bg-white w-[30vw] md:w-[15vw] 2xl:w-[10vw] mx-auto pt-1 py-0 lg:pt-0" >EQUIPO</h3>
 			</div>
 			<div
 				className="absolute right-1/10 top-60 flex flex-col items-end space-y-6 md:space-y-8 xl:space-y-10 gap-5"
 			>
 				<div className='text-white text-[12px]/[12px] md:text-[13px]/[13px] 2xl:text-[14px]/[14px] tracking-wide flex flex-col items-end gap-1 rotate-90 text-center translate-x-11 md:translate-x-12 xl:translate-x-13'>
-					<span className='inline-block leading-none w-fit bg-metal-500 font-normal px-1 py-1 text-right'>DANIEL</span>
-					<span className='inline-block leading-none bg-metal-500 font-light px-1 py-1 tracking-[.5em]'>FERNÁNDEZ</span>
+					<p className='inline-block leading-none w-fit bg-metal-500 font-normal px-1 pt-1 py-0 lg:pt-[3px] lg:pb-[1px] text-right'>DANIEL</p>
+					<p className='inline-block leading-none bg-metal-500 font-light px-1 pt-1 py-0 lg:pt-[3px] lg:pb-[1px] tracking-[.5em]'>FERNÁNDEZ</p>
 				</div>
 
 				<p className="text-white font-light text-[10px]/[12px] md:text-[13px]/[13px] 2xl:text-[14px]/[14px] tracking-wide" >BAILARÍN Y FUNDADOR</p>
