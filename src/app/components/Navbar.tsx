@@ -61,19 +61,29 @@ export default function ScrollNav() {
 			style={{ top: isFixed ? offsetTopFinal : centerTop }}
 		>
 			<a href="#space" className="inline-block leading-none text-metal-300 hover:text-gray-300 transition font-bold">
-				ESPACIO
+				<span>
+					ESPACIO
+				</span>
 			</a>
 			<a href="#team" className="inline-block leading-none text-metal-300 hover:text-gray-300 transition font-bold">
-				EQUIPO
+				<span>
+					EQUIPO
+				</span>
 			</a>
 			<a href="#services" className="inline-block leading-none text-metal-300 hover:text-gray-300 transition font-bold">
-				SERVICIOS
+				<span>
+					SERVICIOS
+				</span>
 			</a>
 			<a href="#" className="inline-block leading-none text-metal-300 hover:text-gray-300 transition font-bold">
-				TARIFAS
+				<span>
+					TARIFAS
+				</span>
 			</a>
 			<a href="#" className="inline-block leading-none text-metal-300 hover:text-gray-300 transition font-bold">
-				CONTACTO
+				<span>
+					CONTACTO
+				</span>
 			</a>
 		</nav>
 	);

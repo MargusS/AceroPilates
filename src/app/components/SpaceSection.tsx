@@ -9,7 +9,7 @@ export default function SpaceSection() {
 			<MainAcero imageLayout="rotate-x-180 opacity-50 self-start" />
 			<MainAcero imageLayout=" self-end" />
 			<div className='my-12 md:my-15 flex flex-col gap-10 md:gap-14 2xl:gap-20 align-center justify-center text-[12px]/[12px] md:text-sm font-light w-full'>
-				<h3 className="text-center text-metal-400 font-semibold text-xl bg-white w-[30vw] md:w-[15vw] 2xl:w-[10vw] mx-auto" >ESPACIO</h3>
+				<span className="text-center text-metal-400 font-semibold text-xl bg-white w-[30vw] md:w-[15vw] 2xl:w-[10vw] mx-auto px-5" >ESPACIO</span>
 				<div className='flex flex-col items-center text-white font-light text-[9px]/[11px] md:text-[10px]/[12px] 2xl:text-[13px]/[14px] tracking-widest'>
 					<h5 className="font-bold tracking-[.8em] text-[12px]/[13px] md:text-xs">PILATES MÁQUINA</h5>
 					<p>TÉCNICA</p>
@@ -17,9 +17,9 @@ export default function SpaceSection() {
 					<p>ATENCIÓN PERSONALIZADA</p>
 				</div>
 				<div className='flex flex-col items-center gap-1 2xl:gap-2 text-center font-normal text-metal-500 tracking-widest text-[10px]/[11px] md:text-[11px]/[12px] 2xl:text-[13px]/[16px]'>
-					<p className='bg-white w-[70vw] md:w-[45vw] 2xl:w-[30vw]'>ENTORNO MINIMALISTA</p>
-					<p className='bg-white w-[70vw] md:w-[45vw] 2xl:w-[30vw]'>REFORMER</p>
-					<p className='bg-white w-[70vw] md:w-[45vw] 2xl:w-[30vw]'>TORRE | CADILLAC</p>
+					<span className='bg-white w-[70vw] md:w-[45vw] 2xl:w-[30vw]'>ENTORNO MINIMALISTA</span>
+					<span className='bg-white w-[70vw] md:w-[45vw] 2xl:w-[30vw]'>REFORMER</span>
+					<span className='bg-white w-[70vw] md:w-[45vw] 2xl:w-[30vw]'>TORRE | CADILLAC</span>
 				</div>
 			</div>
 			<div className='absolute bottom-35 2xl:bottom-40 left-10 md:left-15 2xl:left-30'>
