@@ -6,11 +6,11 @@ export default function Email() {
 			<Image
 				src="/icons/alt.svg"
 				alt="Instagram"
-				width={30}
-				height={30}
-				className="md:w-[30px] 2xl:w-[40px]"
+				width={20}
+				height={20}
+				className="md:w-[25px] 2xl:w-[30px]"
 			/>
-			<div className='flex flex-col tracking-widest text-[12px]/[13px] md:text-xs 2xl:text-lg/[20px]'>
+			<div className='flex flex-col tracking-widest text-[12px]/[13px] md:text-xs/[14px] 2xl:text-base/[18px]'>
 				<span className="font-bold">aceropilatesstudio</span>
 				<span className="font-light  tracking-[.82em]">gmail.com</span>
 			</div>

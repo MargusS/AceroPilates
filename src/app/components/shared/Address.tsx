@@ -5,7 +5,7 @@ export default function Address() {
 		<div className="text-white text-[8px]/[12px] 2xl:text-xs" >
 			<span className="font-medium text-[8px]/[16px] 2xl:text-xs tracking-[.25em]">602 - 721 - 291</span>
 
-			<div className='flex gap-5'>
+			<div className='flex gap-4'>
 				<span className="font-light tracking-widest">
 					CALLE CAMINO VIEJO
 				</span>
