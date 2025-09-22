@@ -14,7 +14,7 @@ export default function TeamSection() {
 				/>
 			</div>
 			<div className='absolute top-1/3 left-1/10'>
-				<h3 className="text-center text-metal-400 font-semibold text-lg bg-white w-[30vw] md:w-[15vw] 2xl:w-[10vw] mx-auto pt-1 py-0 lg:pt-0" >EQUIPO</h3>
+				<h3 className="text-center text-metal-400 font-semibold text-lg bg-white w-[30vw] md:w-[15vw] 2xl:w-[10vw] mx-auto pt-1 pb-0 lg:pt-0" >EQUIPO</h3>
 			</div>
 			<div
 				className="absolute right-1/10 top-[30%] flex flex-col items-end space-y-7 md:space-y-9 xl:space-y-10 gap-5"
