@@ -2,7 +2,7 @@ import Image from 'next/image';
 export default function MainAcero({ imageLayout}: { imageLayout: string;}) {
 
 	return (
-		<div className={`${imageLayout} col-start-1 col-span-3 flex justify-center items-center`}>
+		<div className={`${imageLayout} col-start-1 col-span-3 flex justify-center items-center z-10`}>
 			<Image
 				src="/logos/main-white.png"
 				alt="Pilates Studio Dot Matrix"

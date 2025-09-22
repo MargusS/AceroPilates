@@ -1,3 +1,5 @@
+import MainAcero from "./shared/MainAcero";
+
 export default function ServicesSection() {
 
 	const items = ["INICIAL", "INTERMEDIO", "AVANZADO"];
@@ -51,6 +53,7 @@ export default function ServicesSection() {
 				<p className="font-bold text-white text-[11px]/[12px] md:text-[13px]/[14px] 2xl:text-[16px]/[16px] tracking-widest">CLASES DE <span className="font-light text-2xl md:text-4xl">50</span> MIN</p>
 				<p className="font-light text-white text-[8px]/[5px] md:text-[10px]/[6px] 2xl:text-[12px]/[7px] tracking-[.65em]">MAÑANA Y TARDE</p>
 			</div>
+			<MainAcero imageLayout="absolute bottom-0 right-1/2 transform translate-x-1/2" />
 		</div>
 	);
 }
