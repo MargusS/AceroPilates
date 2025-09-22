@@ -22,7 +22,7 @@ export default function ServicesSection() {
 				</div>
 			</div>
 			<div className="relative h-full w-full grid grid-flow-col grid-rows-3">
-				<h3 className="place-self-center text-center text-metal-400 font-semibold text-lg bg-white w-[30vw] md:w-[15vw] 2xl:w-[10vw] mx-auto pt-1 py-0 lg:pt-0" >SERVICIOS</h3>
+				<h3 className="place-self-center text-center text-metal-400 font-semibold text-lg bg-white w-[30vw] md:w-[15vw] 2xl:w-[10vw] mx-auto pt-1 pb-0 lg:pt-0" >SERVICIOS</h3>
 				<div className="place-self-start w-full flex flex-col gap-3 text-center font-normal text-white text-[11px]/[12px] md:text-[11px]/[14px] 2xl:text-[13px]/[16px] tracking-widest place-self-center">
 					<div className="flex flex-col gap-3">
 						<div className="grid grid-rows-2 grid-cols-3">

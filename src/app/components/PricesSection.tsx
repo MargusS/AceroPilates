@@ -10,67 +10,67 @@ export default function PricesSection() {
 				<MainAcero imageLayout="rotate-x-180 opacity-50 self-start" />
 				<MainAcero imageLayout=" self-end" />
 			</div>
-			<div className='row-start-2 place-self-start flex flex-col gap-5 md:gap-7 align-center justify-center text-[12px]/[12px] xl:text-[16px]/[16px] md:text-sm font-light w-full xl:pt-10'>
-				<h3 className="text-center text-metal-400 font-semibold text-lg bg-white w-[30vw] md:w-[15vw] 2xl:w-[10vw] mx-auto pt-1 py-0 lg:pt-0" >TARIFAS</h3>
-				<div className='flex flex-col text-white w-35 md:w-55 xl:w-90 mx-auto gap-3'>
-					<div className='flex flex-col items-center md:items-start w-full'>
+			<div className='row-start-2 place-self-start flex flex-col gap-5 md:gap-7 align-center justify-center text-[13px]/[14px] xl:text-[16px]/[16px] md:text-sm font-light w-full xl:pt-10'>
+				<h3 className="text-center text-metal-400 font-semibold text-lg bg-white w-[30vw] md:w-[15vw] 2xl:w-[10vw] mx-auto pt-1 pb-0 lg:pt-0" >TARIFAS</h3>
+				<div className='flex flex-col text-white w-45 md:w-55 xl:w-90 mx-auto gap-3'>
+					<div className='flex flex-col items-start w-full'>
 						<h5 className="font-normal text-xl md:text-2 xl:text-4xl">MENSUALIDAD</h5>
-						<p className="font-light text-[9px]/[5px] md:text-[10px]/[12px] xl:text-[15px]/[16px] tracking-[.28em] md:tracking-[.6em] xl:tracking-[.7em]" >SESIONES SEMANALES</p>
+						<p className="font-light text-[9px]/[5px] md:text-[10px]/[12px] xl:text-[15px]/[16px] tracking-[.52em] md:tracking-[.6em] xl:tracking-[.7em]" >SESIONES SEMANALES</p>
 					</div>
 					<div className='flex flex-col gap-1 w-full'>
 						<div className='flex justify-between items-center'>
-							<p className='flex items-center gap-1 text-[12px]/[12px] xl:text-[16px]/[16px]'><span className='font-bold min-w-4'>1</span> SESIÓN</p>
-							<span className="w-10 xl:w-25 text-end text-metal-400 font-semibold text-[12px]/[12px] xl:text-[16px]/[16px] bg-white pt-[.5px] pb-0 lg:pt-0">65€</span>
+							<p className='flex items-center gap-1 text-[13px]/[14px] xl:text-[16px]/[16px]'><span className='font-bold min-w-4'>1</span> SESIÓN</p>
+							<span className="w-10 xl:w-25 text-end text-metal-400 font-semibold text-[13px]/[14px] xl:text-[16px]/[16px] bg-white pt-1 pb-0 lg:pt-0">65€</span>
 						</div>
 						<div className='flex justify-between items-center'>
-							<p className='flex items-center gap-1 text-[12px]/[12px] xl:text-[16px]/[16px]'><span className='font-bold min-w-4'>2</span> SESIONES</p>
-							<span className="w-10 xl:w-25 text-end text-metal-400 font-semibold text-[12px]/[12px] xl:text-[16px]/[16px] bg-white pt-[.5px] pb-0 lg:pt-0">120€</span>
+							<p className='flex items-center gap-1 text-[13px]/[14px] xl:text-[16px]/[16px]'><span className='font-bold min-w-4'>2</span> SESIONES</p>
+							<span className="w-10 xl:w-25 text-end text-metal-400 font-semibold text-[13px]/[14px] xl:text-[16px]/[16px] bg-white pt-1 pb-0 lg:pt-0">120€</span>
 						</div>
 						<div className='flex justify-between items-center'>
-							<p className='flex items-center gap-1 text-[12px]/[12px] xl:text-[16px]/[16px]'><span className='font-bold min-w-4'>3</span> SESIONES</p>
-							<span className="w-10 xl:w-25 text-end text-metal-400 font-semibold text-[12px]/[12px] xl:text-[16px]/[16px] bg-white pt-[.5px] pb-0 lg:pt-0">160€</span>
+							<p className='flex items-center gap-1 text-[13px]/[14px] xl:text-[16px]/[16px]'><span className='font-bold min-w-4'>3</span> SESIONES</p>
+							<span className="w-10 xl:w-25 text-end text-metal-400 font-semibold text-[13px]/[14px] xl:text-[16px]/[16px] bg-white pt-1 pb-0 lg:pt-0">160€</span>
 						</div>
 					</div>
 				</div>
-				<div className='flex flex-col items-start text-white w-35 md:w-55 xl:w-90 mx-auto gap-1'>
+				<div className='flex flex-col items-start text-white w-45 md:w-55 xl:w-90 mx-auto gap-1'>
 					<h5 className="font-normal text-xl md:text-2 xl:text-4xl">BONOS</h5>
 					<div className='flex flex-col gap-1 w-full'>
 						<div className='flex justify-between items-center'>
-							<p className='flex items-center gap-1 text-[12px]/[12px] xl:text-[16px]/[16px]'><span className='font-bold min-w-4'>5</span> SESIÓN</p>
-							<span className="w-10 xl:w-25 text-end text-metal-400 font-semibold text-[12px]/[12px] xl:text-[16px]/[16px] bg-white pt-[.5px] pb-0 lg:pt-0">95€</span>
+							<p className='flex items-center gap-1 text-[13px]/[14px] xl:text-[16px]/[16px]'><span className='font-bold min-w-4'>5</span> SESIÓN</p>
+							<span className="w-10 xl:w-25 text-end text-metal-400 font-semibold text-[13px]/[14px] xl:text-[16px]/[16px] bg-white pt-1 pb-0 lg:pt-0">95€</span>
 						</div>
 						<div className='flex justify-between items-center'>
-							<p className='flex items-center gap-1 text-[12px]/[12px] xl:text-[16px]/[16px]'><span className='font-bold min-w-4'>10</span> SESIONES</p>
-							<span className="w-10 xl:w-25 text-end text-metal-400 font-semibold text-[12px]/[12px] xl:text-[16px]/[16px] bg-white pt-[.5px] pb-0 lg:pt-0">180€</span>
+							<p className='flex items-center gap-1 text-[13px]/[14px] xl:text-[16px]/[16px]'><span className='font-bold min-w-4'>10</span> SESIONES</p>
+							<span className="w-10 xl:w-25 text-end text-metal-400 font-semibold text-[13px]/[14px] xl:text-[16px]/[16px] bg-white pt-1 pb-0 lg:pt-0">180€</span>
 						</div>
 					</div>
 				</div>
-				<div className='flex flex-col items-start text-white w-35 md:w-55 xl:w-90 mx-auto gap-1'>
+				<div className='flex flex-col items-start text-white w-45 md:w-55 xl:w-90 mx-auto gap-1'>
 					<h5 className="font-normal text-xl md:text-2 xl:text-4xl">PRIVADAS</h5>
 					<div className='flex flex-col gap-1 w-full'>
 						<div className='flex justify-between items-center'>
-							<p className='flex items-center gap-1 text-[12px]/[12px] xl:text-[16px]/[16px]'><span className='font-bold min-w-4'>1</span> SESIÓN</p>
-							<span className="w-10 xl:w-25 text-end text-metal-400 font-semibold text-[12px]/[12px] xl:text-[16px]/[16px] bg-white pt-[.5px] pb-0 lg:pt-0">40€</span>
+							<p className='flex items-center gap-1 text-[13px]/[14px] xl:text-[16px]/[16px]'><span className='font-bold min-w-4'>1</span> SESIÓN</p>
+							<span className="w-10 xl:w-25 text-end text-metal-400 font-semibold text-[13px]/[14px] xl:text-[16px]/[16px] bg-white pt-1 pb-0 lg:pt-0">40€</span>
 						</div>
 						<div className='flex justify-between items-center'>
-							<p className='flex items-center gap-1 text-[12px]/[12px] xl:text-[16px]/[16px]'><span className='font-bold min-w-4'>5</span> SESIONES</p>
-							<span className="w-10 xl:w-25 text-end text-metal-400 font-semibold text-[12px]/[12px] xl:text-[16px]/[16px] bg-white pt-[.5px] pb-0 lg:pt-0">210€</span>
+							<p className='flex items-center gap-1 text-[13px]/[14px] xl:text-[16px]/[16px]'><span className='font-bold min-w-4'>5</span> SESIONES</p>
+							<span className="w-10 xl:w-25 text-end text-metal-400 font-semibold text-[13px]/[14px] xl:text-[16px]/[16px] bg-white pt-1 pb-0 lg:pt-0">210€</span>
 						</div>
 						<div className='flex justify-between items-center'>
-							<p className='flex items-center gap-1 text-[12px]/[12px] xl:text-[16px]/[16px]'><span className='font-bold min-w-4'>10</span> SESIONES</p>
-							<span className="w-10 xl:w-25 text-end text-metal-400 font-semibold text-[12px]/[12px] xl:text-[16px]/[16px] bg-white pt-[.5px] pb-0 lg:pt-0">390€</span>
+							<p className='flex items-center gap-1 text-[13px]/[14px] xl:text-[16px]/[16px]'><span className='font-bold min-w-4'>10</span> SESIONES</p>
+							<span className="w-10 xl:w-25 text-end text-metal-400 font-semibold text-[13px]/[14px] xl:text-[16px]/[16px] bg-white pt-1 pb-0 lg:pt-0">390€</span>
 						</div>
 					</div>
 				</div>
-				<div className='flex flex-col items-start text-white w-35 md:w-55 xl:w-90 mx-auto mt-5'>
+				<div className='flex flex-col items-start text-white w-45 md:w-55 xl:w-90 mx-auto mt-5'>
 					<div className='flex flex-col gap-1 w-full'>
 						<div className='flex justify-between items-center'>
 							<p className='flex items-center gap-1 text-[11px]/[12px]'>CLASE DE PRUEBA</p>
-							<span className="w-10 xl:w-25 text-end text-metal-400 font-semibold text-[12px]/[12px] xl:text-[16px]/[16px] bg-white pt-[.5px] pb-0 lg:pt-0">10€</span>
+							<span className="w-10 xl:w-25 text-end text-metal-400 font-semibold text-[13px]/[14px] xl:text-[16px]/[16px] bg-white pt-1 pb-0 lg:pt-0">10€</span>
 						</div>
 						<div className='flex justify-between items-center'>
 							<p className='flex items-center gap-1 text-[11px]/[12px]'>CLASE SUELTA</p>
-							<span className="w-10 xl:w-25 text-end text-metal-400 font-semibold text-[12px]/[12px] xl:text-[16px]/[16px] bg-white pt-[.5px] pb-0 lg:pt-0">20€</span>
+							<span className="w-10 xl:w-25 text-end text-metal-400 font-semibold text-[13px]/[14px] xl:text-[16px]/[16px] bg-white pt-1 pb-0 lg:pt-0">20€</span>
 						</div>
 					</div>
 				</div>
