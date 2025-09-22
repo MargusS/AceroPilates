@@ -69,10 +69,10 @@ export default function ScrollNav() {
 			<a href="#services" className="inline-block leading-none text-metal-300 hover:text-gray-300 transition font-bold pt-2 pb-1">
 					SERVICIOS
 			</a>
-			<a href="#" className="inline-block leading-none text-metal-300 hover:text-gray-300 transition font-bold pt-2 pb-1">
+			<a href="#prices" className="inline-block leading-none text-metal-300 hover:text-gray-300 transition font-bold pt-2 pb-1">
 					TARIFAS
 			</a>
-			<a href="#" className="inline-block leading-none text-metal-300 hover:text-gray-300 transition font-bold pt-2 pb-1">
+			<a href="#contact" className="inline-block leading-none text-metal-300 hover:text-gray-300 transition font-bold pt-2 pb-1">
 					CONTACTO
 			</a>
 		</nav>
