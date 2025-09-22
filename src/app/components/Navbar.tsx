@@ -57,7 +57,7 @@ export default function ScrollNav() {
 
 	return (
 		<nav
-			className={`${positionClass} w-full left-1/2 transform -translate-x-1/2 bg-white/90 backdrop-blur-sm text-white font-medium text-[9px]/[9px] md:text-xs 2xl:text-sm flex justify-center items-center gap-7 z-50`}
+			className={`${positionClass} w-full left-1/2 transform -translate-x-1/2 bg-white/90 backdrop-blur-sm text-white font-medium text-[9px]/[9px] md:text-xs 2xl:text-sm flex justify-center items-center gap-5 z-50`}
 			style={{ top: isFixed ? offsetTopFinal : centerTop }}
 		>
 			<a href="#space" className="inline-block leading-none text-metal-300 hover:text-gray-300 transition font-bold pt-2 pb-1">
@@ -69,10 +69,10 @@ export default function ScrollNav() {
 			<a href="#services" className="inline-block leading-none text-metal-300 hover:text-gray-300 transition font-bold pt-2 pb-1">
 					SERVICIOS
 			</a>
-			<a href="#" className="inline-block leading-none text-metal-300 hover:text-gray-300 transition font-bold pt-2 pb-1">
+			<a href="#prices" className="inline-block leading-none text-metal-300 hover:text-gray-300 transition font-bold pt-2 pb-1">
 					TARIFAS
 			</a>
-			<a href="#" className="inline-block leading-none text-metal-300 hover:text-gray-300 transition font-bold pt-2 pb-1">
+			<a href="#contact" className="inline-block leading-none text-metal-300 hover:text-gray-300 transition font-bold pt-2 pb-1">
 					CONTACTO
 			</a>
 		</nav>

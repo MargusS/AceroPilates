@@ -9,6 +9,8 @@ import Instagram from '../components/shared/Instagram';
 import TeamSection from '../components/TeamSection';
 import ServicesSection from '../components/ServicesSection';
 import Image from 'next/image';
+import PricesSection from '../components/PricesSection';
+import ContactSection from '../components/ContactSection';
 export default function Home({ params }: { params: Promise<{ locale: string }> }) {
 
 	const { locale } = use(params);
@@ -35,6 +37,8 @@ export default function Home({ params }: { params: Promise<{ locale: string }> }
 				</div>
 				<FullScreenBackground id='services' bgImageMobile="/images/image00000.jpg" bgImageDesktop="/images/image00000.jpg" imagePosition="center"><ServicesSection /></FullScreenBackground>
 			</div>
+			<FullScreenBackground id='prices' bgImageMobile="/images/image00001.jpg" bgImageDesktop="/images/image00001.jpg" imagePosition="left"><PricesSection /></FullScreenBackground>
+			<FullScreenBackground id='contact' bgImageMobile="/images/image00000.jpg" bgImageDesktop="/images/image00000.jpg" imagePosition="left"><ContactSection /></FullScreenBackground>
 		</main>
 	);
 }
