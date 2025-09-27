@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function Instagram() {
 
 	return (
-		<div className="fixed bottom-1/4 right-[-4rem] md:right-[-3rem] z-50 ">
+		<div className="fixed bottom-1/4 md:bottom-1/4 right-[-4rem] md:right-[-3rem] z-50 ">
 				<Link href="https://instagram.com/aceropilates/" target="_blank" rel="noopener noreferrer" className="flex gap-3 items-center rotate-90">
 					<Image
 						src="/icons/instagram.svg"

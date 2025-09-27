@@ -1,8 +1,8 @@
 import Image from 'next/image';
-export default function Email() {
+export default function Email({ className }: { className?: string }) {
 
 	return (
-		<div className="flex items-center gap-1 text-white text-[8px]/[12px]">
+		<div className={`${className} flex items-center gap-1 text-white text-[8px]/[12px] `}>
 			<Image
 				src="/icons/alt.svg"
 				alt="Instagram"

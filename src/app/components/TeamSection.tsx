@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Email from './shared/Email';
+import SectionTitle from './shared/SectionTitle';
 export default function TeamSection() {
 
 	return (
@@ -13,9 +14,7 @@ export default function TeamSection() {
 					className="w-[70vw] max-w-lg md:w-[40vw] md:max-w-[600px]"
 				/>
 			</div>
-			<div className='absolute top-1/3 left-1/10'>
-				<h3 className="text-center text-metal-400 font-semibold text-lg bg-white w-[30vw] md:w-[15vw] 2xl:w-[10vw] mx-auto pt-1 pb-0 lg:pt-0" >EQUIPO</h3>
-			</div>
+			<SectionTitle className='absolute top-1/3 left-1/10' title="EQUIPO" />
 			<div
 				className="absolute right-1/10 top-[30%] flex flex-col items-end space-y-7 md:space-y-9 xl:space-y-10 gap-5"
 			>
@@ -30,9 +29,7 @@ export default function TeamSection() {
 				<h4 className='text-center text-white font-semibold text-sm  md:text-lg 2xl:text-xl tracking-[.45em] mx-auto'>TÉCNICA Y SENSIBILIDAD</h4>
 				<p className='text-center text-white text-[10px]/[11px] md:text-[12px]/[13px] 2xl:text-[14px]/[15px] font-light tracking-widest w-[50vw] md:w-[20vw] 2xl:w-[18vw] mx-auto'>FUSIONA <span className='font-bold text-sm md:text-lg 2xl:text-xl'>19</span> AÑOS DE EXPERIENCIA EN MOVIMIENTO CON UNA PASIÓN POR LA DANZA Y EL <span className='font-bold'>PILATES</span></p>
 			</div>
-			<div className='absolute bottom-30 left-1/15'>
-				<Email />
-			</div>
+			<Email className='absolute bottom-30 left-1/15' />
 		</div>
 	);
 }
