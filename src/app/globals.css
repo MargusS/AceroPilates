@@ -38,7 +38,7 @@
   font-family: var(--font-tiny);
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -49,12 +49,20 @@ body {
 }
 
 @keyframes marquee {
-  0% { transform: translateX(0%); }
-  100% { transform: translateX(-100%); }
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 @keyframes marquee2 {
-  0% { transform: translateX(100%); }
-  100% { transform: translateX(0%); }
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }
 
 .animate-marquee {
@@ -71,4 +79,42 @@ body {
 .no-scrollbar {
   scrollbar-width: none;
   -ms-overflow-style: none;
+}
+
+/* globals.css o tu archivo de estilos */
+.map-container {
+  box-shadow: 0 2px 16px rgba(0,0,0,0.12);
+  background: #efefef;
+}
+
+.leaflet-control-attribution,.leaflet-control{
+	opacity: 60% !important;
+	background: transparent !important;
+}
+
+.leaflet-container a {
+	color: var(--foreground) !important;
+}
+
+.leaflet-container a svg  {
+	display: none !important;
+}
+
+.leaflet-control-container .leaflet-top{
+	width: 100% !important;
+	display: flex !important;
+	justify-content: flex-end !important;
+}
+
+.leaflet-control-container .leaflet-control-zoom {
+	border: none !important;
+	display: flex !important;
+	flex-direction: column !important;
+	gap: 5px !important;
+	margin-right: 10px !important;
+}
+
+.leaflet-control-container .leaflet-control-zoom a{
+	background: transparent !important;
+	border-bottom: 0 !important;
 }
