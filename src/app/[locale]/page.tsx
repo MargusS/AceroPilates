@@ -22,10 +22,10 @@ export default function Home({ params }: { params: Promise<{ locale: string }> }
 		<main className="">
 			<Navbar />
 			<Instagram />
-			<FullScreenBackground id='home' bgImageMobile="/images/image00000.jpg" bgImageDesktop="/images/image00000.jpg" imagePosition="center"><HomeSection /></FullScreenBackground>
-			<FullScreenBackground id='space' bgImageMobile="/images/space-mobile.jpg" bgImageDesktop="/images/space-desktop.jpg" imagePosition="right"><SpaceSection /></FullScreenBackground>
+			<FullScreenBackground id='home' bgImageMobile="/images/image000000.jpg" bgImageDesktop="/images/image000000.jpg" bgOverlay="bg-white/25" imagePosition="center"><HomeSection /></FullScreenBackground>
+			<FullScreenBackground id='space' bgImageMobile="/images/space-mobile.jpg" bgImageDesktop="/images/space-desktop.jpg" bgOverlay="bg-white/10" imagePosition="right"><SpaceSection /></FullScreenBackground>
 			<div className="relative overflow-hidden">
-				<FullScreenBackground id='team' bgImageMobile="/images/team-mobile.jpg" bgImageDesktop="/images/team-desktop.jpg" imagePosition="center"><TeamSection /></FullScreenBackground>
+				<FullScreenBackground id='team' bgImageMobile="/images/team-mobile.jpg" bgImageDesktop="/images/team-desktop.jpg" bgOverlay="bg-black/20" imagePosition="center"><TeamSection /></FullScreenBackground>
 				<div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/3 z-10">
 					<Image
 						src="/logos/circle-metal.png"
@@ -35,10 +35,10 @@ export default function Home({ params }: { params: Promise<{ locale: string }> }
 						className="w-[110vw] max-w-lg md:w-[40vw] md:max-w-[650px] opacity-70"
 					/>
 				</div>
-				<FullScreenBackground id='services' bgImageMobile="/images/image00000.jpg" bgImageDesktop="/images/image00000.jpg" imagePosition="center"><ServicesSection /></FullScreenBackground>
+				<FullScreenBackground id='services' bgImageMobile="/images/image000000.jpg" bgImageDesktop="/images/image000000.jpg" bgOverlay="bg-white/25" imagePosition="center"><ServicesSection /></FullScreenBackground>
 			</div>
-			<FullScreenBackground id='prices' bgImageMobile="/images/image00001.jpg" bgImageDesktop="/images/image00001.jpg" imagePosition="left"><PricesSection /></FullScreenBackground>
-			<FullScreenBackground id='contact' bgImageMobile="/images/image00000.jpg" bgImageDesktop="/images/image00000.jpg" imagePosition="left"><ContactSection /></FullScreenBackground>
+			<FullScreenBackground id='prices' bgImageMobile="/images/image00001.jpg" bgImageDesktop="/images/image00001.jpg" bgOverlay="bg-black/20" imagePosition="left"><PricesSection /></FullScreenBackground>
+			<FullScreenBackground id='contact' bgImageMobile="/images/image000000.jpg" bgImageDesktop="/images/image000000.jpg" bgOverlay="bg-white/25" imagePosition="left"><ContactSection /></FullScreenBackground>
 		</main>
 	);
 }
