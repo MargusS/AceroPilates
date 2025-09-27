@@ -4,6 +4,7 @@ export default function FullScreenBackground({
 	id,
 	bgImageMobile,
 	bgImageDesktop,
+	bgOverlay,
 	alt = "Fondo",
 	imagePosition = "center",
 	children
@@ -11,6 +12,7 @@ export default function FullScreenBackground({
 	id?: string;
 	bgImageMobile: string;
 	bgImageDesktop: string;
+	bgOverlay?: string;
 	alt?: string;
 	imagePosition?: string;
 	children: React.ReactNode;
@@ -54,7 +56,7 @@ export default function FullScreenBackground({
 					}}
 				/>
 			</picture>
-			<div className="absolute inset-0 bg-black/10 z-10" />
+			<div className={`absolute inset-0 ${bgOverlay} z-10`} />
 			{children}
 		</section >
 	);
