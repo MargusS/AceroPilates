@@ -34,7 +34,7 @@ export default function Home({ params }: { params: Promise<{ locale: string }> }
 						alt="Pilates Studio Dot Matrix"
 						width={1280}
 						height={480}
-						className="w-[95vw] max-w-lg md:w-[50vw] md:max-w-[750px] opacity-70"
+						className="w-[95vw] max-w-lg md:w-[50vw] md:max-w-[700px]opacity-70"
 					/>
 				</div>
 				<PricesSection />
@@ -44,7 +44,7 @@ export default function Home({ params }: { params: Promise<{ locale: string }> }
 						alt="Pilates Studio Dot Matrix"
 						width={1280}
 						height={480}
-						className="w-[110vw] max-w-xl md:w-[50vw] md:max-w-[1000px] opacity-100"
+						className="w-[110vw] max-w-xl md:w-[60vw] md:max-w-[1000px] xl:max-w-[600px] opacity-100"
 					/>
 				</div>
 				<FullScreenSilk id='contact' parentPosition='' rotation={0.55} bgOverlay="bg-white/20"><ContactSection /></FullScreenSilk>

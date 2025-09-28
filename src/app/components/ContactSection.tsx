@@ -17,16 +17,16 @@ export default function ContactSection() {
 					{/* <p className="text-white text-[11px]/[12px] md:text-[11px]/[14px] 2xl:text-[13px]/[16px] font-normal tracking-[1.5em]">HORARIOS</p> */}
 					<div className='flex flex-col mt-3 md:mt-10 xl:mt-0 text-white font-light leading-5 text-sm md:text-lg 2xl:text-xl'>
 						<div className='flex align-center gap-2 md:gap-4'>
-							<p className='tracking-widest'>LUN. & MIE | </p>
 							<p className='font-normal text-[9px]'>08:00 - 11:30 / 17:00 - 21:00</p>
+							<p className='tracking-widest'>| LUN. & MIE </p>
 						</div>
 						<div className='flex align-center gap-2 md:gap-4'>
-							<p className='tracking-widest'>MAR. & JUE. | </p>
 							<p className='font-normal text-[9px]'>08:00 - 12:00 / 17:30 - 21:30</p>
+							<p className='tracking-widest'>| MAR. & JUE.</p>
 						</div>
 						<div className='flex align-center gap-2 md:gap-4'>
-							<p className='tracking-widest'>VIE. |</p>
 							<p className='font-normal text-[9px]'>08:00 - 12:00 / 16:30 - 19:30</p>
+							<p className='tracking-widest'>| VIE.</p>
 						</div>
 					</div>
 				</div>
