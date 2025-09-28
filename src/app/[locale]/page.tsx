@@ -8,7 +8,7 @@ import Navbar from '../components/Navbar';
 import PricesSection from '../components/PricesSection';
 import ServicesSection from '../components/ServicesSection';
 import FullScreenImage from '../components/shared/FullScreenImage';
-import Instagram from '../components/shared/Instagram';
+import Instagram from '../components/Instagram';
 import SpaceSection from '../components/SpaceSection';
 import TeamSection from '../components/TeamSection';
 import FullScreenSilk from '../components/shared/FullScreenSilk';
