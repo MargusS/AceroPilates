@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Email from './shared/Email';
 import SectionTitle from './shared/SectionTitle';
+import MainAcero from './shared/MainAcero';
 export default function TeamSection() {
 
 	return (
@@ -30,6 +31,7 @@ export default function TeamSection() {
 				<p className='text-center text-white text-[10px]/[11px] md:text-[12px]/[13px] 2xl:text-[14px]/[15px] font-light tracking-widest w-[50vw] md:w-[20vw] 2xl:w-[18vw] mx-auto'>FUSIONA <span className='font-bold text-sm md:text-lg 2xl:text-xl'>19</span> AÑOS DE EXPERIENCIA EN MOVIMIENTO CON UNA PASIÓN POR LA DANZA Y EL <span className='font-bold'>PILATES</span></p>
 			</div>
 			<Email className='absolute bottom-30 left-1/15' />
+			<MainAcero imageLayout="absolute bottom-0 right-1/2 transform translate-x-1/2" />
 		</div>
 	);
 }

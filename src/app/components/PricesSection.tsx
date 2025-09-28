@@ -4,13 +4,7 @@ import SectionTitle from './shared/SectionTitle';
 export default function PricesSection() {
 
 	return (
-		<div className="relative z-20 h-full w-full px-4 grid grid-rows-[20vh_65vh_15vh]">
-			<div className='row-start-1'>
-				{/* <MainAcero imageLayout="rotate-x-180 self-start" />
-				<MainAcero imageLayout="opacity-50 self-end" /> */}
-				<MainAcero imageLayout="rotate-x-180 opacity-50 self-start" />
-				<MainAcero imageLayout=" self-end" />
-			</div>
+		<section id="prices" className="relative z-20 h-[115vh] w-full px-4 grid grid-rows-[20vh_65vh_15vh]">
 			<div className='row-start-2 place-self-start flex flex-col gap-5 md:gap-7 align-center justify-center text-[13px]/[14px] xl:text-[16px]/[16px] md:text-sm font-light w-full xl:pt-10'>
 				<SectionTitle title="TARIFAS" />
 				<div className='flex flex-col text-white w-45 md:w-55 xl:w-90 mx-auto gap-3'>
@@ -51,11 +45,11 @@ export default function PricesSection() {
 						</div>
 					</div>
 				</div>
-				<div className='flex flex-col text-center mt-5 xl:mt-10 text-metal-500 w-50 xl:w-80 mx-auto'>
+				<div className='flex flex-col text-center mt-5 xl:mt-10 text-metal-200 w-50 xl:w-80 mx-auto'>
 					<span className='font-bold text-3xl/[5px] md:text-4xl/[6px]' >*</span>
 					<span className='font-normal text-[6px]/[7px] xl:text-[9px]/[10px]'>MENSUALIDADES Y BONOS CANJEABLES EN PERIODO DE UN MES DESDE LA FECHA DE COMPRA</span>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 }

@@ -2,11 +2,11 @@ import Image from 'next/image';
 import Address from './shared/Address';
 import Email from './shared/Email';
 import MainAcero from './shared/MainAcero';
+import Silk from '../animation/Silk';
 export default function HomeSection() {
 
 	return (
 		<div className="relative z-20 h-full w-full px-4 grid grid-flow-col grid-rows-2 md:grid-rows-6">
-
 			<div className="mt-5 md:mt-0 md:row-span-3 place-self-center w-full flex flex-col md:flex-row md:justify-center items-center gap-12 md:gap-25">
 				<Image
 					src="/logos/dotted-white.png"
@@ -24,7 +24,6 @@ export default function HomeSection() {
 					className="w-[75vw] max-w-lg md:w-[40vw] md:max-w-[600px] mb-8 md:mb-0"
 				/>
 			</div>
-
 
 			<div className="md:row-span-3 grid grid-rows-6 md:grid-rows-8 grid-cols-3 justify-items-center w-full">
 				<div className="row-start-2 2xl:row-start-3 col-span-3 self-end place-self-start pl-5 md:pl-15">

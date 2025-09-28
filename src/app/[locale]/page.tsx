@@ -1,16 +1,17 @@
 import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
+import Image from 'next/image';
 import { use } from 'react';
-import FullScreenBackground from '../components/shared/FullScreenBackground';
+import ContactSection from '../components/ContactSection';
 import HomeSection from '../components/HomeSection';
 import Navbar from '../components/Navbar';
-import SpaceSection from '../components/SpaceSection';
-import Instagram from '../components/shared/Instagram';
-import TeamSection from '../components/TeamSection';
-import ServicesSection from '../components/ServicesSection';
-import Image from 'next/image';
 import PricesSection from '../components/PricesSection';
-import ContactSection from '../components/ContactSection';
+import ServicesSection from '../components/ServicesSection';
+import FullScreenImage from '../components/shared/FullScreenImage';
+import Instagram from '../components/shared/Instagram';
+import SpaceSection from '../components/SpaceSection';
+import TeamSection from '../components/TeamSection';
+import FullScreenSilk from '../components/shared/FullScreenSilk';
 export default function Home({ params }: { params: Promise<{ locale: string }> }) {
 
 	const { locale } = use(params);
@@ -22,23 +23,32 @@ export default function Home({ params }: { params: Promise<{ locale: string }> }
 		<main className="">
 			<Navbar />
 			<Instagram />
-			<FullScreenBackground id='home' bgImageMobile="/images/image000000.jpg" bgImageDesktop="/images/image000000.jpg" bgOverlay="bg-white/25" imagePosition="center"><HomeSection /></FullScreenBackground>
-			<FullScreenBackground id='space' bgImageMobile="/images/space-mobile.jpg" bgImageDesktop="/images/space-desktop.jpg" bgOverlay="bg-white/10" imagePosition="right"><SpaceSection /></FullScreenBackground>
+			<FullScreenSilk id='home' bgOverlay="bg-white/30" speed={9}><HomeSection /></FullScreenSilk>
+			<FullScreenImage id='space' bgImageMobile="/images/space-mobile.jpg" bgImageDesktop="/images/space-desktop.jpg" bgOverlay="bg-white/10" imagePosition="right"><SpaceSection /></FullScreenImage>
+			<FullScreenImage id='team' bgImageMobile="/images/team-mobile.jpg" bgImageDesktop="/images/team-desktop.jpg" bgOverlay="bg-black/20" imagePosition="center"><TeamSection /></FullScreenImage>
 			<div className="relative overflow-hidden">
-				<FullScreenBackground id='team' bgImageMobile="/images/team-mobile.jpg" bgImageDesktop="/images/team-desktop.jpg" bgOverlay="bg-black/20" imagePosition="center"><TeamSection /></FullScreenBackground>
-				<div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/3 z-10">
+				<ServicesSection />
+				<div className="absolute top-[31.5%] left-1/2 transform -translate-x-1/2 -translate-y-1/3 z-10">
+					<Image
+						src="/logos/dotted-metal.png"
+						alt="Pilates Studio Dot Matrix"
+						width={1280}
+						height={480}
+						className="w-[95vw] max-w-lg md:w-[50vw] md:max-w-[700px]opacity-70"
+					/>
+				</div>
+				<PricesSection />
+				<div className="absolute top-[66.5%]  left-1/2 transform -translate-x-1/2 -translate-y-1/3 z-25">
 					<Image
 						src="/logos/circle-metal.png"
 						alt="Pilates Studio Dot Matrix"
 						width={1280}
 						height={480}
-						className="w-[110vw] max-w-lg md:w-[40vw] md:max-w-[650px] opacity-70"
+						className="w-[110vw] max-w-xl md:w-[60vw] md:max-w-[1000px] xl:max-w-[600px] opacity-100"
 					/>
 				</div>
-				<FullScreenBackground id='services' bgImageMobile="/images/image000000.jpg" bgImageDesktop="/images/image000000.jpg" bgOverlay="bg-white/25" imagePosition="center"><ServicesSection /></FullScreenBackground>
+				<FullScreenSilk id='contact' parentPosition='' rotation={0.55} bgOverlay="bg-white/20"><ContactSection /></FullScreenSilk>
 			</div>
-			<FullScreenBackground id='prices' bgImageMobile="/images/image00001.jpg" bgImageDesktop="/images/image00001.jpg" bgOverlay="bg-black/20" imagePosition="left"><PricesSection /></FullScreenBackground>
-			<FullScreenBackground id='contact' bgImageMobile="/images/image000000.jpg" bgImageDesktop="/images/image000000.jpg" bgOverlay="bg-white/25" imagePosition="left"><ContactSection /></FullScreenBackground>
 		</main>
 	);
 }

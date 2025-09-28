@@ -1,6 +1,8 @@
+'use client';
 
-import Image, { getImageProps } from 'next/image';
-export default function FullScreenBackground({
+import Silk from '@/components/Silk';
+import { getImageProps } from 'next/image';
+export default function FullScreenImage({
 	id,
 	bgImageMobile,
 	bgImageDesktop,
@@ -56,7 +58,7 @@ export default function FullScreenBackground({
 					}}
 				/>
 			</picture>
-			<div className={`absolute inset-0 ${bgOverlay} z-10`} />
+			<div className={`absolute inset-0 ${bgOverlay}`} />
 			{children}
 		</section >
 	);
