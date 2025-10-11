@@ -8,10 +8,11 @@ import Navbar from '../components/Navbar';
 import PricesSection from '../components/PricesSection';
 import ServicesSection from '../components/ServicesSection';
 import FullScreenImage from '../components/shared/FullScreenImage';
-import Instagram from '../components/shared/Instagram';
+import Instagram from '../components/Instagram';
 import SpaceSection from '../components/SpaceSection';
 import TeamSection from '../components/TeamSection';
 import FullScreenSilk from '../components/shared/FullScreenSilk';
+import FixedPopover from '../components/shared/FixedPopOver';
 export default function Home({ params }: { params: Promise<{ locale: string }> }) {
 
 	const { locale } = use(params);
@@ -23,6 +24,7 @@ export default function Home({ params }: { params: Promise<{ locale: string }> }
 		<main className="">
 			<Navbar />
 			<Instagram />
+			<FixedPopover />
 			<FullScreenSilk id='home' bgOverlay="bg-white/30" speed={9}><HomeSection /></FullScreenSilk>
 			<FullScreenImage id='space' bgImageMobile="/images/space-mobile.jpg" bgImageDesktop="/images/space-desktop.jpg" bgOverlay="bg-white/10" imagePosition="right"><SpaceSection /></FullScreenImage>
 			<FullScreenImage id='team' bgImageMobile="/images/team-mobile.jpg" bgImageDesktop="/images/team-desktop.jpg" bgOverlay="bg-black/20" imagePosition="center"><TeamSection /></FullScreenImage>
