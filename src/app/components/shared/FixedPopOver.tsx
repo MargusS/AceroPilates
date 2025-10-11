@@ -27,7 +27,7 @@ export default function FixedLiquidGlassPopover() {
 		>
 			<button
 				className="
-          px-4 pt-[7.5px] pb-[6px] rounded-full shadow-lg border border-white/20
+          px-4 pt-[7.5px] pb-[5.5px] rounded-full shadow-lg border border-white/20
           bg-white/20 backdrop-blur-lg
           text-metal-600 font-semibold text-sm
           hover:bg-white/40 transition-colors
