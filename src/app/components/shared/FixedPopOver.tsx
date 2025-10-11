@@ -23,11 +23,11 @@ export default function FixedLiquidGlassPopover() {
 	return (
 		<div
 			ref={ref}
-			className="fixed bottom-6 right-6 z-50 flex flex-row-reverse items-end"
+			className="fixed bottom-9 right-6 z-50 flex flex-row-reverse items-end"
 		>
 			<button
 				className="
-          px-4 pt-[7px] pb-[6px] rounded-full shadow-lg border border-white/20
+          px-4 pt-[7.5px] pb-[6px] rounded-full shadow-lg border border-white/20
           bg-white/20 backdrop-blur-lg
           text-metal-600 font-semibold text-sm
           hover:bg-white/40 transition-colors
