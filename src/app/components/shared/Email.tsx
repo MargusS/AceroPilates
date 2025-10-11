@@ -16,7 +16,6 @@ export default function Email({ className }: { className?: string }) {
 					text={["aceropilatesstudio gmail.com", "aceropilatesstudio gmail.com"]}
 					typingSpeed={75}
 					pauseDuration={1500}
-					showCursor={true}
 					cursorCharacter="|"
 					cursorBlinkDuration={500}
 					className="font-normal tracking-[1em]"
