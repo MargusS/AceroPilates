@@ -16,7 +16,7 @@ const Popup = dynamic(() => import("react-leaflet").then(mod => mod.Popup), { ss
 
 export default function MapComponent() {
 	const [customIcon, setCustomIcon] = useState<import("leaflet").Icon | null>(null)
-	const position: [number, number] = [40.3215498, -3.7551768]; // Coordenadas de Madrid, España
+	const position: [number, number] = [40.391887, -3.7240774]; // Coordenadas de Madrid, España
 
 	useEffect(() => {
 		import("leaflet").then(L => {
