@@ -2,7 +2,6 @@ import Image from 'next/image';
 import Address from './shared/Address';
 import Email from './shared/Email';
 import MainAcero from './shared/MainAcero';
-import Silk from '../animation/Silk';
 export default function HomeSection() {
 
 	return (
@@ -13,6 +12,7 @@ export default function HomeSection() {
 					alt="Pilates Studio Dot Matrix"
 					width={1280}
 					height={240}
+					priority
 					className="w-[75vw] max-w-lg md:w-[40vw] md:max-w-[600px]  "
 				/>
 				<Image
