@@ -25,6 +25,7 @@ export default function FullScreenVideo({
         playsInline
         className="fullscreen-bg-video"
         aria-label={alt}
+		preload="auto"
       >
         {/* Desktop source */}
         <source src={bgVideoDesktop} media="(min-width: 768px)" type="video/mp4" />
