@@ -26,8 +26,8 @@ export default function Home({ params }: { params: Promise<{ locale: string }> }
 			<Instagram />
 			<FixedPopover />
 			<FullScreenSilk id='home' bgOverlay="bg-white/30" speed={9}><HomeSection /></FullScreenSilk>
-			<FullScreenImage id='space' bgImageMobile="/images/new-space.jpg" bgImageDesktop="/images/new-space.jpg" bgOverlay="bg-white/10" imagePosition="center"><SpaceSection /></FullScreenImage>
-			<FullScreenImage id='team' bgImageMobile="/images/new-team.jpg" bgImageDesktop="/images/new-team.jpg" bgOverlay="bg-black/20" imagePosition="center"><TeamSection /></FullScreenImage>
+			<FullScreenImage id='space' bgImageMobile="/images/new-space-mobile.jpg" bgImageDesktop="/images/new-space.jpg" bgOverlay="bg-white/10" imagePosition="center"><SpaceSection /></FullScreenImage>
+			<FullScreenImage id='team' bgImageMobile="/images/new-team-mobile.jpg" bgImageDesktop="/images/new-team.jpg" bgOverlay="bg-black/20" imagePosition="center"><TeamSection /></FullScreenImage>
 			<div className="relative overflow-hidden">
 				<ServicesSection />
 				<div className="absolute top-[31.5%] left-1/2 transform -translate-x-1/2 -translate-y-1/3 z-10">
