@@ -15,7 +15,7 @@ export default function TeamSection() {
 					className="w-[70vw] max-w-lg md:w-[40vw] md:max-w-[600px]"
 				/>
 			</div>
-			<SectionTitle className='absolute top-1/3 left-1/10' title="EQUIPO" />
+			<SectionTitle className='absolute top-1/4 left-1/10' title="EQUIPO" />
 			<div
 				className="absolute right-1/10 top-[30%] flex flex-col items-end space-y-7 md:space-y-9 xl:space-y-10 gap-5"
 			>
