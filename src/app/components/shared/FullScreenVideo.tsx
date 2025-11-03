@@ -17,7 +17,7 @@ export default function FullScreenVideo({
   children: React.ReactNode;
 }) {
   return (
-    <section id={id} className="relative w-screen h-screen overflow-hidden">
+    <section id={id} className="relative w-full h-screen overflow-hidden">
       <video
         autoPlay
         muted
