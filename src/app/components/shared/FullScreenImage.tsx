@@ -26,7 +26,7 @@ export default function FullScreenImage({
 		width: 4096,
 		height: 2746,
 		sizes: "100vw",
-		quality: 100
+		quality: 90
 	});
 
 	// Props para mobile (ejemplo: 750x1334)
