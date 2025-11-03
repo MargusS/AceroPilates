@@ -13,6 +13,7 @@ import SpaceSection from '../components/SpaceSection';
 import TeamSection from '../components/TeamSection';
 import FullScreenSilk from '../components/shared/FullScreenSilk';
 import FixedPopover from '../components/shared/FixedPopOver';
+import FullScreenVideo from '../components/shared/FullScreenVideo';
 export default function Home({ params }: { params: Promise<{ locale: string }> }) {
 
 	const { locale } = use(params);
@@ -25,9 +26,9 @@ export default function Home({ params }: { params: Promise<{ locale: string }> }
 			<Navbar />
 			<Instagram />
 			<FixedPopover />
-			<FullScreenSilk id='home' bgOverlay="bg-white/30" speed={9}><HomeSection /></FullScreenSilk>
+			<FullScreenVideo id='space' bgVideoMobile="/images/bgHome.mp4" bgVideoDesktop="/images/bgHome.mp4" bgOverlay="bg-black/45" videoPosition="center"><HomeSection /></FullScreenVideo>
 			<FullScreenImage id='space' bgImageMobile="/images/new-space-mobile.jpg" bgImageDesktop="/images/new-space.jpg" bgOverlay="bg-white/10" imagePosition="center"><SpaceSection /></FullScreenImage>
-			<FullScreenImage id='team' bgImageMobile="/images/new-team-mobile.jpg" bgImageDesktop="/images/new-team.jpg" bgOverlay="bg-black/20" imagePosition="center"><TeamSection /></FullScreenImage>
+			<FullScreenImage id='team' bgImageMobile="/images/new-team-mobile.jpg" bgImageDesktop="/images/new-team.jpg" bgOverlay="bg-black/10" imagePosition="center"><TeamSection /></FullScreenImage>
 			<div className="relative overflow-hidden">
 				<ServicesSection />
 				<div className="absolute top-[31.5%] left-1/2 transform -translate-x-1/2 -translate-y-1/3 z-10">
