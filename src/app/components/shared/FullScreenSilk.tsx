@@ -1,7 +1,6 @@
 'use client';
 
 import Silk from '@/components/Silk';
-import { getImageProps } from 'next/image';
 export default function FullScreenSilk({
 	id,
 	parentPosition = "relative",
