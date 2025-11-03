@@ -1,6 +1,5 @@
 'use client';
 
-import Silk from '@/components/Silk';
 import { getImageProps } from 'next/image';
 export default function FullScreenImage({
 	id,
@@ -24,8 +23,8 @@ export default function FullScreenImage({
 	} = getImageProps({
 		src: bgImageDesktop,
 		alt,
-		width: 1440,
-		height: 1024,
+		width: 4096,
+		height: 2746,
 		sizes: "100vw",
 		quality: 100
 	});
@@ -36,8 +35,8 @@ export default function FullScreenImage({
 	} = getImageProps({
 		src: bgImageMobile,
 		alt,
-		width: 750,
-		height: 1334,
+		width: 1500,
+		height: 2760,
 		sizes: "100vw",
 		quality: 100
 	});
