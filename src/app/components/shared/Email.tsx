@@ -13,7 +13,7 @@ export default function Email({ className }: { className?: string }) {
 			/>
 			<div className='flex flex-col tracking-widest text-[12px]/[13px] md:text-xs/[14px] 2xl:text-base/[18px] w-[100px]  2xl:w-[140px]'>
 				<TextType
-					text={["aceropilatesstudio gmail.com", "aceropilatesstudio gmail.com"]}
+					text={["aceropilatestudio gmail.com", "aceropilatestudio gmail.com"]}
 					typingSpeed={75}
 					pauseDuration={1500}
 					cursorCharacter="|"
