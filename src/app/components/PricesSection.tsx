@@ -27,8 +27,8 @@ export default function PricesSection() {
 				<div className='flex flex-col items-start text-white w-45 md:w-55 xl:w-90 mx-auto gap-1'>
 					<h5 className="font-normal text-xl md:text-2 xl:text-4xl">PRIVADAS</h5>
 					<div className='flex flex-col gap-1 w-full'>
-						<PriceRow sessions="1" price="45" />
-						<PriceRow sessions="6" price="240" />
+						<PriceRow sessions="1" price="60" />
+						<PriceRow sessions="6" price="300" />
 					</div>
 				</div>
 				<div className='flex flex-col items-start text-white w-45 md:w-55 xl:w-90 mx-auto mt-5'>
