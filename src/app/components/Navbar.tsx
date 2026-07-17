@@ -1,75 +1,64 @@
 "use client";
+
 import { useEffect, useState } from "react";
 
+const NAV_HEIGHT = 18;
+const DEFAULT_TOP = 40;
+
+function getOffsetTop(width: number) {
+  if (width < 375) return 30;
+  if (width < 768) return 37;
+  if (width < 1536) return 50;
+  return 70;
+}
+
 export default function ScrollNav() {
-  const navHeight = 18;
   const [isFixed, setIsFixed] = useState(false);
-  const [navReady, setNavReady] = useState(false);
-  const [centerTop, setCenterTop] = useState(0);
+  const [topPosition, setTopPosition] = useState(DEFAULT_TOP);
 
   useEffect(() => {
-    const calculateNavCenter = () => {
+    const updateNavPosition = () => {
       const width = window.innerWidth;
+      const height = window.innerHeight;
+      const offsetTop = getOffsetTop(width);
+      const center = height / 2 - NAV_HEIGHT / 2;
+      const shouldBeFixed = window.scrollY >= center - offsetTop;
 
-      let offsetTop;
-      if (width < 375) offsetTop = 30;
-      else if (width < 768) offsetTop = 37;
-      else if (width < 1536) offsetTop = 50;
-      else offsetTop = 70;
-
-      const center = window.innerHeight / 2 - navHeight / 2;
-
-      setCenterTop(center);
-      setNavReady(true);
-      setIsFixed(window.scrollY >= center - offsetTop);
+      setIsFixed(shouldBeFixed);
+      setTopPosition(shouldBeFixed ? offsetTop : center);
     };
 
-    calculateNavCenter();
+    updateNavPosition();
 
-    window.addEventListener("scroll", calculateNavCenter);
-    window.addEventListener("resize", calculateNavCenter);
+    window.addEventListener("scroll", updateNavPosition, { passive: true });
+    window.addEventListener("resize", updateNavPosition);
 
     return () => {
-      window.removeEventListener("scroll", calculateNavCenter);
-      window.removeEventListener("resize", calculateNavCenter);
+      window.removeEventListener("scroll", updateNavPosition);
+      window.removeEventListener("resize", updateNavPosition);
     };
   }, []);
 
-  if (!navReady) return null;
-
-  const positionClass = isFixed ? "fixed" : "absolute";
-
-  let offsetTopFinal;
-  if (typeof window !== "undefined") {
-    const width = window.innerWidth;
-    if (width < 375) offsetTopFinal = 30;
-    else if (width < 768) offsetTopFinal = 37;
-    else if (width < 1536) offsetTopFinal = 50;
-    else offsetTopFinal = 70;
-  } else {
-    offsetTopFinal = 40;
-  }
-
   return (
     <div
-      className={`${positionClass} left-0 right-0 z-50 pointer-events-none`}
-      style={{ top: isFixed ? offsetTopFinal : centerTop }}
+      className={`${isFixed ? "fixed" : "absolute"} left-0 right-0 z-50 pointer-events-none`}
+      style={{ top: topPosition }}
     >
       <div className="site-shell px-4 md:px-6">
         <nav className="pointer-events-auto mx-auto flex w-fit max-w-full items-center justify-center gap-4 rounded-full border border-white/20 bg-white/85 px-4 md:px-5 text-[9px]/[9px] font-medium backdrop-blur-md md:gap-5 md:text-xs 2xl:text-sm">
-          <a href="#space" className="inline-block leading-none text-metal-300 transition hover:text-gray-300 font-bold pt-2 pb-1">
+          <a href="#space" className="inline-block pt-2 pb-1 leading-none font-bold text-metal-300 transition hover:text-gray-300">
             ESPACIO
           </a>
-          <a href="#team" className="inline-block leading-none text-metal-300 transition hover:text-gray-300 font-bold pt-2 pb-1">
+          <a href="#team" className="inline-block pt-2 pb-1 leading-none font-bold text-metal-300 transition hover:text-gray-300">
             EQUIPO
           </a>
-          <a href="#services" className="inline-block leading-none text-metal-300 transition hover:text-gray-300 font-bold pt-2 pb-1">
+          <a href="#services" className="inline-block pt-2 pb-1 leading-none font-bold text-metal-300 transition hover:text-gray-300">
             SERVICIOS
           </a>
-          <a href="#prices" className="inline-block leading-none text-metal-300 transition hover:text-gray-300 font-bold pt-2 pb-1">
+          <a href="#prices" className="inline-block pt-2 pb-1 leading-none font-bold text-metal-300 transition hover:text-gray-300">
             TARIFAS
           </a>
-          <a href="#contact" className="inline-block leading-none text-metal-300 transition hover:text-gray-300 font-bold pt-2 pb-1">
+          <a href="#contact" className="inline-block pt-2 pb-1 leading-none font-bold text-metal-300 transition hover:text-gray-300">
             CONTACTO
           </a>
         </nav>
