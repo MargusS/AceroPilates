@@ -5,7 +5,7 @@ import MainAcero from './shared/MainAcero';
 export default function HomeSection() {
 
 	return (
-		<div className="relative z-20 h-full w-full px-4 grid grid-flow-col grid-rows-2 md:grid-rows-6">
+		<div className="relative z-20 min-h-[100svh] w-full px-4 grid grid-rows-[auto_1fr] md:grid-rows-[34svh_1fr]">
 			<div className="mt-5 md:mt-0 md:row-span-3 place-self-center w-full">
 				<div className="relative flex min-h-[34svh] flex-col items-center justify-start md:hidden">
 					<div className="relative w-full max-w-[540px]">
@@ -31,7 +31,7 @@ export default function HomeSection() {
 
 				<div className="relative hidden w-full items-start justify-center md:flex">
 					<div className="relative flex w-full max-w-[1200px] flex-col items-center justify-center md:min-h-[30svh]">
-						<div className="relative w-full max-w-[760px] xl:max-w-[860px]">
+						<div className="relative w-full max-w-[760px] xl:max-w-[660px]">
 							<Image
 								src="/logos/dotted-metal.png"
 								alt="Acero Pilates Studio"
@@ -58,14 +58,14 @@ export default function HomeSection() {
 				</div>
 			</div>
 
-			<div className="md:row-span-3 grid grid-rows-6 md:grid-rows-8 grid-cols-3 justify-items-center w-full">
-				<div className="row-start-2 2xl:row-start-3 col-span-3 self-end place-self-start pl-5 md:pl-15">
+			<div className="grid h-full grid-rows-6 md:grid-rows-8 2xl:grid-rows-6 grid-cols-3 justify-items-center w-full">
+				<div className="row-start-3 2xl:row-start-3 col-span-3 self-end lg:self-start place-self-start pl-5 md:pl-15">
 					<Address />
 				</div>
-				<div className="row-start-4 2xl:row-start-5 col-span-2 self-end place-self-start pl-5 md:pl-15">
+				<div className="row-start-4 2xl:row-start-4 col-span-2 self-end place-self-start pl-5 md:pl-15">
 					<Email />
 				</div>
-				<div className='row-start-5 md:row-start-7 2xl:row-start-6 col-span-3 self-end md:self-start 2xl:self-end flex justify-center items-center text-center gap-4 md:gap-12 text-white text-[8px]/[12px] 2xl:text-sm tracking-widest font-light'>
+				<div className='row-start-5 md:row-start-7 2xl:row-start-5 col-span-3 self-end md:self-start 2xl:self-end flex justify-center items-center text-center gap-4 md:gap-12 text-white text-[8px]/[12px] 2xl:text-sm tracking-widest font-light'>
 					<span>PILATES</span>
 					<span>SUELO</span>
 					<div className='flex flex-col'>
@@ -75,7 +75,7 @@ export default function HomeSection() {
 					<span>PILATES</span>
 					<span>EMBARAZO</span>
 				</div>
-				<MainAcero imageLayout="row-start-6 md:row-start-8 self-end" />
+				<MainAcero imageLayout="row-start-6 md:row-start-8 2xl:row-start-6 self-end translate-y-1 md:translate-y-3" />
 			</div>
 
 		</div>
