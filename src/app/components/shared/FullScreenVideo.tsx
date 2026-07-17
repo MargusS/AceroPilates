@@ -5,19 +5,18 @@ export default function FullScreenVideo({
   bgVideoMobile,
   bgVideoDesktop,
   bgOverlay,
-  alt = "Fondo",
-  children
+  alt = 'Fondo',
+  children,
 }: {
   id?: string;
   bgVideoMobile: string;
   bgVideoDesktop: string;
   bgOverlay?: string;
   alt?: string;
-  videoPosition?: string;
   children: React.ReactNode;
 }) {
   return (
-    <section id={id} className="relative w-full h-screen overflow-hidden">
+    <section id={id} className="section-frame min-h-screen">
       <video
         autoPlay
         muted
@@ -25,18 +24,18 @@ export default function FullScreenVideo({
         playsInline
         className="fullscreen-bg-video"
         aria-label={alt}
-		preload="auto"
+        preload="auto"
       >
-        {/* Desktop source */}
         <source src={bgVideoDesktop} media="(min-width: 768px)" type="video/mp4" />
-        {/* Mobile source */}
         <source src={bgVideoMobile} media="(max-width: 767px)" type="video/mp4" />
-        {/* Fallback text */}
         Tu navegador no soporta videos en HTML5.
       </video>
-      {/* Overlay */}
-      <div className={`absolute inset-0 pointer-events-none ${bgOverlay}`} />
-      {children}
+
+      <div className={`absolute inset-0 z-10 pointer-events-none ${bgOverlay ?? ''}`} />
+
+      <div className="section-inner">
+        {children}
+      </div>
     </section>
   );
 }

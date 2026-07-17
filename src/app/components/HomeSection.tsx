@@ -13,7 +13,7 @@ export default function HomeSection() {
 					width={1280}
 					height={240}
 					priority
-					className="w-[75vw] max-w-lg md:w-[40vw] md:max-w-[600px]  "
+					className="w-full max-w-[540px] md:max-w-[600px]  "
 				/>
 				<Image
 					src="/logos/dotted-metal.png"
@@ -21,7 +21,7 @@ export default function HomeSection() {
 					width={1280}
 					height={240}
 					priority
-					className="w-[75vw] max-w-lg md:w-[40vw] md:max-w-[600px] mb-8 md:mb-0"
+					className="w-full max-w-[540px] md:max-w-[600px] mb-8 md:mb-0"
 				/>
 			</div>
 

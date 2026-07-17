@@ -96,6 +96,36 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
+.site-shell {
+  width: 100%;
+  max-width: 1680px;
+  margin-inline: auto;
+  background: var(--color-background, var(--metal-000));
+}
+
+.section-frame {
+  position: relative;
+  width: 100%;
+  min-height: 100svh;
+  overflow: clip;
+}
+
+.section-inner {
+  position: relative;
+  z-index: 20;
+  width: min(100% - 2rem, 1440px);
+  margin-inline: auto;
+  min-height: 100%;
+}
+
+.bg-media-fill {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .font-dotmatrix {
   font-family: var(--font-dot-matrix);
 }
@@ -147,40 +177,41 @@ body {
 
 /* globals.css o tu archivo de estilos */
 .map-container {
-  box-shadow: 0 2px 16px rgba(0,0,0,0.12);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.12);
   background: #efefef;
 }
 
-.leaflet-control-attribution,.leaflet-control{
-	opacity: 60% !important;
-	background: transparent !important;
+.leaflet-control-attribution,
+.leaflet-control {
+  opacity: 60% !important;
+  background: transparent !important;
 }
 
 .leaflet-container a {
-	color: var(--foreground) !important;
+  color: var(--foreground) !important;
 }
 
-.leaflet-container a svg  {
-	display: none !important;
+.leaflet-container a svg {
+  display: none !important;
 }
 
-.leaflet-control-container .leaflet-top{
-	width: 100% !important;
-	display: flex !important;
-	justify-content: flex-end !important;
+.leaflet-control-container .leaflet-top {
+  width: 100% !important;
+  display: flex !important;
+  justify-content: flex-end !important;
 }
 
 .leaflet-control-container .leaflet-control-zoom {
-	border: none !important;
-	display: flex !important;
-	flex-direction: column !important;
-	gap: 5px !important;
-	margin-right: 10px !important;
+  border: none !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 5px !important;
+  margin-right: 10px !important;
 }
 
-.leaflet-control-container .leaflet-control-zoom a{
-	background: transparent !important;
-	border-bottom: 0 !important;
+.leaflet-control-container .leaflet-control-zoom a {
+  background: transparent !important;
+  border-bottom: 0 !important;
 }
 
 .dark {
@@ -228,12 +259,9 @@ body {
 
 .fullscreen-bg-video {
   position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100vw;
-  min-height: 100vh;
-  width: 100vw;
-  height: 100vh;
+  inset: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center;
   z-index: 0;
