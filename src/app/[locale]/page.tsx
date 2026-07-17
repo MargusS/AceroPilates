@@ -20,7 +20,7 @@ export default function Home({ params }: { params: Promise<{ locale: string }> }
 	const { locale } = use(params);
 
 	setRequestLocale(locale);
-	preload("/images/team-desktop.jpg", {
+	preload("/images/poster-bg.webp", {
 		as: "image",
 		fetchPriority: "high",
 	});
@@ -35,7 +35,7 @@ export default function Home({ params }: { params: Promise<{ locale: string }> }
 				id="space"
 				bgVideoMobile="/images/bgHome.mp4"
 				bgVideoDesktop="/images/bgHome.mp4"
-				posterImage="/images/team-desktop.jpg"
+				posterImage="/images/poster-bg.webp"
 				bgOverlay="bg-black/45">
 				<HomeSection />
 			</FullScreenVideo>

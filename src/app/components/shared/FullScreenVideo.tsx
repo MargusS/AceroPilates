@@ -22,27 +22,54 @@ export default function FullScreenVideo({
   children,
 }: FullScreenVideoProps) {
   const videoRef = useRef<HTMLVideoElement | null>(null);
-  const [isVideoReady, setIsVideoReady] = useState(false);
+  const [isVideoVisible, setIsVideoVisible] = useState(false);
 
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return;
 
-    const handleReady = () => {
-      setIsVideoReady(true);
-      void video.play().catch(() => {});
+    let mounted = true;
+    let revealTimeout: ReturnType<typeof setTimeout> | null = null;
+
+    const revealVideo = () => {
+      if (!mounted) return;
+      setIsVideoVisible(true);
     };
 
-    const handleCanPlay = () => {
-      setIsVideoReady(true);
+    const tryPlay = async () => {
+      try {
+        await video.play();
+      } catch {
+        // Silencio intencional: si el autoplay falla, mantenemos el poster.
+      }
     };
 
-    video.addEventListener("loadeddata", handleReady);
-    video.addEventListener("canplay", handleCanPlay);
+    const handlePlaying = () => revealVideo();
+    const handleLoadedData = () => revealVideo();
+    const handleTimeUpdate = () => {
+      if (video.currentTime > 0.01) {
+        revealVideo();
+      }
+    };
+
+    tryPlay();
+
+    video.addEventListener("playing", handlePlaying);
+    video.addEventListener("loadeddata", handleLoadedData);
+    video.addEventListener("timeupdate", handleTimeUpdate);
+
+    revealTimeout = setTimeout(() => {
+      if (video.readyState >= 2) {
+        revealVideo();
+      }
+    }, 1200);
 
     return () => {
-      video.removeEventListener("loadeddata", handleReady);
-      video.removeEventListener("canplay", handleCanPlay);
+      mounted = false;
+      video.removeEventListener("playing", handlePlaying);
+      video.removeEventListener("loadeddata", handleLoadedData);
+      video.removeEventListener("timeupdate", handleTimeUpdate);
+      if (revealTimeout) clearTimeout(revealTimeout);
     };
   }, []);
 
@@ -64,10 +91,10 @@ export default function FullScreenVideo({
         muted
         loop
         playsInline
-        preload="metadata"
+        preload="auto"
         poster={posterImage}
-        className={`fullscreen-bg-video transition-opacity duration-700 ease-out ${
-          isVideoReady ? "opacity-100" : "opacity-0"
+        className={`fullscreen-bg-video transition-opacity duration-300 ease-out ${
+          isVideoVisible ? "opacity-100" : "opacity-0"
         }`}
       >
         <source
