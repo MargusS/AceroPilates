@@ -36,14 +36,14 @@ export default function Home({ params }: { params: Promise<{ locale: string }> }
 				bgVideoMobile="/images/bgHome.mp4"
 				bgVideoDesktop="/images/bgHome.mp4"
 				posterImage="/images/poster-bg.webp"
-				bgOverlay="bg-black/45">
+				bgOverlay="bg-black/35">
 				<HomeSection />
 			</FullScreenVideo>
 			<FullScreenImage
 				id='space'
 				bgImageMobile="/images/new-space-mobile.jpg"
 				bgImageDesktop="/images/new-space.jpg"
-				bgOverlay="bg-white/10"
+				bgOverlay="bg-black/35"
 				imagePosition="center">
 				<SpaceSection />
 			</FullScreenImage>
