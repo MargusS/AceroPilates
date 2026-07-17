@@ -32,7 +32,7 @@ export default function Home({ params }: { params: Promise<{ locale: string }> }
 			<Instagram />
 			<FixedPopover />
 			<FullScreenVideo
-				id="space"
+				id="home"
 				bgVideoMobile="/images/bgHome.mp4"
 				bgVideoDesktop="/images/bgHome.mp4"
 				posterImage="/images/poster-bg.webp"
