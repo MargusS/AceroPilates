@@ -54,7 +54,7 @@ export default function ServicesSection() {
 						{items.map((item, i) => (
 							<span
 								key={i}
-								className="mx-8 text-2xl font-light lg:text-3xl text-white tracking-wide"
+								className="mx-8 text-xl font-light lg:text-xl text-white tracking-wide"
 							>
 								{item}
 							</span>
@@ -64,7 +64,7 @@ export default function ServicesSection() {
 						{items.map((item, i) => (
 							<span
 								key={`dup-${i}`}
-								className="mx-8 text-2xl font-light lg:text-3xl text-white tracking-wide"
+								className="mx-8 text-xl font-light lg:text-xl text-white tracking-wide"
 							>
 								{item}
 							</span>

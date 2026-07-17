@@ -63,7 +63,7 @@ export default function Home({ params }: { params: Promise<{ locale: string }> }
 						alt="Pilates Studio Dot Matrix"
 						width={1280}
 						height={480}
-						className="w-full max-w-[560px] md:max-w-[700px] opacity-70"
+						className="w-full max-w-[560px] opacity-70"
 					/>
 				</div>
 				<PricesSection />
