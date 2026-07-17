@@ -365,3 +365,39 @@ body {
     opacity: 0.24;
   }
 }
+
+.service-line {
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.78) 0%,
+    rgba(255, 255, 255, 0.96) 50%,
+    rgba(255, 255, 255, 0.78) 100%
+  );
+  transform: scaleX(0);
+  opacity: 0.35;
+  filter: saturate(0.9);
+  will-change: transform, opacity;
+}
+
+.service-line-left {
+  transform-origin: left center;
+}
+
+.service-line-right {
+  transform-origin: right center;
+}
+
+@media (min-width: 1024px) {
+  .service-line {
+    height: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .service-line {
+    transform: scaleX(1) !important;
+    opacity: 1 !important;
+  }
+}
