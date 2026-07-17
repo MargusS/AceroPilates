@@ -12,6 +12,14 @@ function getOffsetTop(width: number) {
   return 70;
 }
 
+const links = [
+  { href: "#space", label: "ESPACIO" },
+  { href: "#team", label: "EQUIPO" },
+  { href: "#services", label: "SERVICIOS" },
+  { href: "#prices", label: "TARIFAS" },
+  { href: "#contact", label: "CONTACTO" },
+];
+
 export default function ScrollNav() {
   const [isFixed, setIsFixed] = useState(false);
   const [topPosition, setTopPosition] = useState(DEFAULT_TOP);
@@ -44,23 +52,19 @@ export default function ScrollNav() {
       className={`${isFixed ? "fixed" : "absolute"} left-0 right-0 z-50 pointer-events-none`}
       style={{ top: topPosition }}
     >
-      <div className="site-shell px-4 md:px-6">
-        <nav className="pointer-events-auto mx-auto flex w-fit max-w-full items-center justify-center gap-4 rounded-full border border-white/20 bg-white/85 px-4 md:px-5 text-[9px]/[9px] font-medium backdrop-blur-md md:gap-5 md:text-xs 2xl:text-sm">
-          <a href="#space" className="inline-block pt-2 pb-1 leading-none font-bold text-metal-300 transition hover:text-gray-300">
-            ESPACIO
-          </a>
-          <a href="#team" className="inline-block pt-2 pb-1 leading-none font-bold text-metal-300 transition hover:text-gray-300">
-            EQUIPO
-          </a>
-          <a href="#services" className="inline-block pt-2 pb-1 leading-none font-bold text-metal-300 transition hover:text-gray-300">
-            SERVICIOS
-          </a>
-          <a href="#prices" className="inline-block pt-2 pb-1 leading-none font-bold text-metal-300 transition hover:text-gray-300">
-            TARIFAS
-          </a>
-          <a href="#contact" className="inline-block pt-2 pb-1 leading-none font-bold text-metal-300 transition hover:text-gray-300">
-            CONTACTO
-          </a>
+      <div className="site-shell">
+        <nav className="pointer-events-auto mx-auto flex w-full items-center justify-center border-y border-white/55 bg-white/88 px-2 py-1 backdrop-blur-sm supports-[backdrop-filter]:bg-white/78 md:px-4 md:py-1.5">
+          <div className="flex w-full items-center justify-center overflow-hidden whitespace-nowrap">
+            {links.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                className="inline-flex min-w-0 flex-shrink items-center justify-center px-2 py-1 text-[clamp(0.5rem,1.75vw,0.72rem)] leading-none font-semibold tracking-[0.02em] text-metal-400 transition-colors duration-200 hover:text-metal-700 md:px-3 md:text-[0.72rem] lg:px-4 lg:text-xs"
+              >
+                {link.label}
+              </a>
+            ))}
+          </div>
         </nav>
       </div>
     </div>
