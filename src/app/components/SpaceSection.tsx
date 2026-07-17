@@ -26,7 +26,7 @@ export default function SpaceSection() {
 			<div className='absolute bottom-35 2xl:bottom-40 left-10 md:left-15 2xl:left-30'>
 				<Address />
 			</div>
-			<div className='absolute bottom-5 2xl:bottom-15 left-1/2 transform -translate-x-1/2 w-full flex gap-2 tracking-widest text-white font-light text-[7px] md:text-xs justify-center items-center text-center items-center overflow-hidden'>
+			<div className='absolute bottom-5 2xl:bottom-15 left-1/2 transform -translate-x-1/2 w-full max-w-[92vw] px-3 flex flex-wrap justify-center items-center gap-x-2 gap-y-1 overflow-hidden text-center text-white font-light text-[7px] tracking-[0.18em] md:max-w-full md:flex-nowrap md:gap-y-0 md:px-0 md:text-xs md:tracking-widest'>
 				<span className='font-bold pb-[2px] md:pb-0'>PRIMER</span>
 				<span className=''>ESTUDIO</span>
 				<span className=''>DE</span>
