@@ -42,7 +42,7 @@ export default function PricesSection() {
 						</div>
 					</div>
 				</div>
-				<div className='flex flex-col text-center mt-5 xl:mt-10 text-metal-200 w-50 xl:w-80 mx-auto'>
+				<div className='flex flex-col text-center mt-5 xl:mt-2 text-metal-200 w-50 xl:w-80 mx-auto'>
 					<span className='font-bold text-3xl/[5px] md:text-4xl/[6px]' >*</span>
 					<span className='font-normal text-[6px]/[7px] xl:text-[9px]/[10px]'>MENSUALIDADES Y BONOS CANJEABLES EN PERIODO DE UN MES DESDE LA FECHA DE COMPRA</span>
 				</div>

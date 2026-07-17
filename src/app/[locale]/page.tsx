@@ -57,23 +57,23 @@ export default function Home({ params }: { params: Promise<{ locale: string }> }
 			</FullScreenImage>
 			<div className="relative overflow-hidden">
 				<ServicesSection />
-				<div className="absolute top-[31.5%] left-1/2 transform -translate-x-1/2 -translate-y-1/3 z-10">
+				<div className="absolute top-[31.5%] left-1/2 transform -translate-x-1/2 -translate-y-1/3 z-10 w-full">
 					<Image
 						src="/logos/dotted-metal.png"
 						alt="Pilates Studio Dot Matrix"
 						width={1280}
 						height={480}
-						className="w-full max-w-[560px] opacity-70"
+						className="w-full max-w-[600px] xl:max-w-[500px] mx-auto opacity-70"
 					/>
 				</div>
 				<PricesSection />
-				<div className="absolute top-[66.5%]  left-1/2 transform -translate-x-1/2 -translate-y-1/3 z-25">
+				<div className="absolute top-[66.5%]  left-1/2 transform -translate-x-1/2 -translate-y-1/3 z-25 w-full">
 					<Image
 						src="/logos/circle-metal.png"
 						alt="Pilates Studio Dot Matrix"
 						width={1280}
 						height={480}
-						className="w-full max-w-[620px] md:max-w-[760px] xl:max-w-[600px] opacity-100"
+						className="w-full max-w-[600px] mx-auto opacity-70"
 					/>
 				</div>
 				<FullScreenSilk
