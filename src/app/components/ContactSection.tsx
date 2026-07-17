@@ -1,8 +1,6 @@
-import Image from 'next/image';
 import LocationMap from './contact-section/LocationMap';
 import Address from './shared/Address';
 import Email from './shared/Email';
-import SectionTitle from './shared/SectionTitle';
 export default function ContactSection() {
 
 	return (

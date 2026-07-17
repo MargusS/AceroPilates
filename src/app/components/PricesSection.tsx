@@ -1,5 +1,4 @@
 import PriceRow from './price-section/PriceRow';
-import MainAcero from './shared/MainAcero';
 import SectionTitle from './shared/SectionTitle';
 export default function PricesSection() {
 
