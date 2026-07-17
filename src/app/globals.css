@@ -267,3 +267,101 @@ body {
   z-index: 0;
   will-change: opacity;
 }
+
+@keyframes heroLogoGhostPulse {
+  0% {
+    opacity: 0.08;
+    transform: translate3d(0, 4px, 0) scale(0.992);
+  }
+  50% {
+    opacity: 0.62;
+    transform: translate3d(0, -4px, 0) scale(1.018);
+  }
+  100% {
+    opacity: 0.08;
+    transform: translate3d(0, 4px, 0) scale(0.992);
+  }
+}
+
+@keyframes heroLogoMainBreath {
+  0% {
+    opacity: 0.88;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: translate3d(0, -1px, 0) scale(1.004);
+  }
+  100% {
+    opacity: 0.88;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+.hero-logo-ghost {
+  opacity: 0.1;
+  animation: heroLogoGhostPulse 5.6s ease-in-out infinite;
+  will-change: opacity, transform;
+  mix-blend-mode: screen;
+}
+
+.hero-logo-main {
+  animation: heroLogoMainBreath 5.6s ease-in-out infinite;
+  will-change: opacity, transform;
+}
+
+@keyframes heroLogoMobileEcho {
+  0% {
+    opacity: 0.2;
+    transform: translate3d(0, 4px, 0) scale(0.985);
+  }
+  50% {
+    opacity: 0.38;
+    transform: translate3d(0, -2px, 0) scale(1);
+  }
+  100% {
+    opacity: 0.2;
+    transform: translate3d(0, 4px, 0) scale(0.985);
+  }
+}
+
+@keyframes heroLogoMobileMain {
+  0% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    opacity: 0.96;
+    transform: translate3d(0, -1px, 0) scale(1.003);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+.hero-logo-mobile-main {
+  animation: heroLogoMobileMain 6.8s ease-in-out infinite;
+  will-change: opacity, transform;
+}
+
+.hero-logo-mobile-echo {
+  animation: heroLogoMobileEcho 6.8s ease-in-out infinite;
+  will-change: opacity, transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-logo-mobile-main,
+  .hero-logo-mobile-echo {
+    animation: none;
+    transform: none;
+  }
+
+  .hero-logo-mobile-main {
+    opacity: 1;
+  }
+
+  .hero-logo-mobile-echo {
+    opacity: 0.24;
+  }
+}

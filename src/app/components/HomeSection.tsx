@@ -6,23 +6,56 @@ export default function HomeSection() {
 
 	return (
 		<div className="relative z-20 h-full w-full px-4 grid grid-flow-col grid-rows-2 md:grid-rows-6">
-			<div className="mt-5 md:mt-0 md:row-span-3 place-self-center w-full flex flex-col md:flex-row md:justify-center items-center gap-12 md:gap-25">
-				<Image
-					src="/logos/dotted-white.png"
-					alt="Pilates Studio Dot Matrix"
-					width={1280}
-					height={240}
-					priority
-					className="w-full max-w-[540px] md:max-w-[600px]  "
-				/>
-				<Image
-					src="/logos/dotted-metal.png"
-					alt="Acero Pilates Studio"
-					width={1280}
-					height={240}
-					priority
-					className="w-full max-w-[540px] md:max-w-[600px] mb-8 md:mb-0"
-				/>
+			<div className="mt-5 md:mt-0 md:row-span-3 place-self-center w-full">
+				<div className="relative flex min-h-[34svh] flex-col items-center justify-start md:hidden">
+					<div className="relative w-full max-w-[540px]">
+						<Image
+							src="/logos/dotted-white.png"
+							alt="Pilates Studio Dot Matrix"
+							width={1280}
+							height={240}
+							priority
+							className="hero-logo-mobile-main relative z-20 w-full"
+						/>
+
+						<Image
+							src="/logos/dotted-metal.png"
+							alt="Acero Pilates Studio"
+							width={1280}
+							height={240}
+							priority
+							className="hero-logo-mobile-echo absolute inset-x-0 top-[72%] z-10 mx-auto w-full max-w-[500px]"
+						/>
+					</div>
+				</div>
+
+				<div className="relative hidden w-full items-start justify-center md:flex">
+					<div className="relative flex w-full max-w-[1200px] flex-col items-center justify-center md:min-h-[30svh]">
+						<div className="relative w-full max-w-[760px] xl:max-w-[860px]">
+							<Image
+								src="/logos/dotted-metal.png"
+								alt="Acero Pilates Studio"
+								width={1280}
+								height={240}
+								priority
+								className="hero-logo-main relative z-10 w-full"
+							/>
+
+							<Image
+								src="/logos/dotted-white.png"
+								alt="Pilates Studio Dot Matrix"
+								width={1280}
+								height={240}
+								priority
+								className="hero-logo-ghost absolute inset-0 z-20 w-full"
+							/>
+						</div>
+
+						<div className="pointer-events-none absolute inset-x-0 top-[58%] z-10 flex justify-center">
+							<div className="h-px w-[42vw] max-w-[520px] bg-white/18 blur-[0.5px]" />
+						</div>
+					</div>
+				</div>
 			</div>
 
 			<div className="md:row-span-3 grid grid-rows-6 md:grid-rows-8 grid-cols-3 justify-items-center w-full">
