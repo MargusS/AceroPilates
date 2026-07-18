@@ -10,8 +10,8 @@ export default function TeamSection() {
 				<Image
 					src="/logos/dotted-white.png"
 					alt="Pilates Studio Dot Matrix"
-					width={1280}
-					height={480}
+					width={1920}
+					height={822}
 					className="w-[70vw] max-w-lg md:w-[40vw] md:max-w-[600px]"
 				/>
 			</div>

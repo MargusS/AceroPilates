@@ -6,8 +6,8 @@ export default function MainAcero({ imageLayout}: { imageLayout: string;}) {
 			<Image
 				src="/logos/main-white.png"
 				alt="Pilates Studio Dot Matrix"
-				width={1280}
-				height={240}
+				width={1920}
+				height={822}
 				quality={100}
 				priority
 				className="w-[85vw] max-w-lg md:max-w-[450px] 2xl:max-w-[550px]"
