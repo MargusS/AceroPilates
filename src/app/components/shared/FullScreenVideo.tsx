@@ -42,8 +42,13 @@ export default function FullScreenVideo({
 			} catch { }
 		};
 
-		const handlePlaying = () => revealVideo();
-		const handleLoadedData = () => revealVideo();
+		const handlePlaying = () => {
+			revealVideo();
+		};
+
+		const handleLoadedData = () => {
+			revealVideo();
+		};
 
 		tryPlay();
 
@@ -67,44 +72,49 @@ export default function FullScreenVideo({
 	return (
 		<section
 			id={id}
-			className="section-frame min-h-screen"
+			aria-label={alt}
+			className="relative min-h-[100svh] overflow-hidden"
 			style={{
 				backgroundImage: `url('${posterImage}')`,
 				backgroundSize: "cover",
 				backgroundPosition: "center",
 				backgroundRepeat: "no-repeat",
 			}}
-			aria-label={alt}
 		>
-			<video
-				ref={videoRef}
-				autoPlay
-				muted
-				loop
-				playsInline
-				preload="metadata"
-				poster={posterImage}
-				className={`fullscreen-bg-video transition-opacity duration-300 ease-out ${isVideoVisible ? "opacity-100" : "opacity-0"
-					}`}
-			>
-				<source
-					src={bgVideoDesktop}
-					media="(min-width: 768px)"
-					type="video/mp4"
-				/>
-				<source
-					src={bgVideoMobile}
-					media="(max-width: 767px)"
-					type="video/mp4"
-				/>
-				Tu navegador no soporta videos en HTML5.
-			</video>
+			<div className="absolute inset-0 z-0">
+				<video
+					ref={videoRef}
+					autoPlay
+					muted
+					loop
+					playsInline
+					preload="metadata"
+					poster={posterImage}
+					aria-hidden="true"
+					className={`fullscreen-bg-video pointer-events-none h-full w-full object-cover transition-opacity duration-300 ease-out ${isVideoVisible ? "opacity-100" : "opacity-0"
+						}`}
+				>
+					<source
+						src={bgVideoMobile}
+						media="(max-width: 767px)"
+						type="video/mp4"
+					/>
+					<source
+						src={bgVideoDesktop}
+						media="(min-width: 768px)"
+						type="video/mp4"
+					/>
+					Video not supported in this browser.
+				</video>
+			</div>
 
 			<div
 				className={`absolute inset-0 z-10 pointer-events-none ${bgOverlay ?? ""}`}
 			/>
 
-			<div className="section-inner">{children}</div>
+			<div className="relative z-20 min-h-[100svh]">
+				<div className="section-inner">{children}</div>
+			</div>
 		</section>
 	);
 }
