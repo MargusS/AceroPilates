@@ -23,7 +23,6 @@ export default function HomeSection() {
 							alt="Acero Pilates Studio"
 							width={1920}
 							height={822}
-							priority
 							className="hero-logo-mobile-echo absolute inset-x-0 top-[72%] z-10 mx-auto w-full max-w-[500px]"
 						/>
 					</div>
@@ -46,7 +45,6 @@ export default function HomeSection() {
 								alt="Pilates Studio Dot Matrix"
 								width={1920}
 								height={822}
-								priority
 								className="hero-logo-ghost absolute inset-0 z-20 w-full"
 							/>
 						</div>

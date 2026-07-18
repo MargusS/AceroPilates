@@ -91,7 +91,7 @@ export default function FullScreenVideo({
         muted
         loop
         playsInline
-        preload="auto"
+        preload="metadata"
         poster={posterImage}
         className={`fullscreen-bg-video transition-opacity duration-300 ease-out ${
           isVideoVisible ? "opacity-100" : "opacity-0"
