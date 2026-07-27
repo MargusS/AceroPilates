@@ -33,10 +33,6 @@ export default function PricesSection() {
 				<div className='flex flex-col items-start text-white w-45 md:w-55 xl:w-90 mx-auto mt-5'>
 					<div className='flex flex-col gap-1 w-full'>
 						<div className='flex justify-between items-center'>
-							<p className='flex items-center gap-1 text-[11px]/[12px]'>CLASE DE PRUEBA</p>
-							<span className="w-10 xl:w-25 text-end text-metal-400 font-semibold text-[13px]/[14px] xl:text-[16px]/[16px] bg-white pt-1 pb-0 lg:pt-0 pr-1">10€</span>
-						</div>
-						<div className='flex justify-between items-center'>
 							<p className='flex items-center gap-1 text-[11px]/[12px]'>CLASE SUELTA</p>
 							<span className="w-10 xl:w-25 text-end text-metal-400 font-semibold text-[13px]/[14px] xl:text-[16px]/[16px] bg-white pt-1 pb-0 lg:pt-0 pr-1">20€</span>
 						</div>
