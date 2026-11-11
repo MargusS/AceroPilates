@@ -138,6 +138,16 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Phone numbers are plain text: neutralize any tel: link a browser injects on its own. */
+a[href^="tel:"],
+a[x-apple-data-detectors] {
+  pointer-events: none;
+  cursor: text;
+  color: inherit !important;
+  text-decoration: none !important;
+  font: inherit !important;
+}
+
 body {
   font-family: var(--font-sans);
 }
@@ -181,37 +191,26 @@ body {
   background: #efefef;
 }
 
-.leaflet-control-attribution,
-.leaflet-control {
-  opacity: 60% !important;
+.maplibregl-ctrl-attrib,
+.maplibregl-ctrl-group {
+  opacity: 60%;
   background: transparent !important;
+  box-shadow: none !important;
 }
 
-.leaflet-container a {
+.maplibregl-ctrl-attrib a {
   color: var(--foreground) !important;
 }
 
-.leaflet-container a svg {
-  display: none !important;
+.maplibregl-ctrl-top-right .maplibregl-ctrl-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-right: 10px;
 }
 
-.leaflet-control-container .leaflet-top {
-  width: 100% !important;
-  display: flex !important;
-  justify-content: flex-end !important;
-}
-
-.leaflet-control-container .leaflet-control-zoom {
-  border: none !important;
-  display: flex !important;
-  flex-direction: column !important;
-  gap: 5px !important;
-  margin-right: 10px !important;
-}
-
-.leaflet-control-container .leaflet-control-zoom a {
-  background: transparent !important;
-  border-bottom: 0 !important;
+.maplibregl-ctrl-group button + button {
+  border-top: 0 !important;
 }
 
 .dark {

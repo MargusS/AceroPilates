@@ -12,6 +12,7 @@ export default function TeamSection() {
 					alt="Pilates Studio Dot Matrix"
 					width={1920}
 					height={822}
+					sizes="(min-width: 768px) min(40vw, 600px), min(70vw, 512px)"
 					className="w-[70vw] max-w-lg md:w-[40vw] md:max-w-[600px]"
 				/>
 			</div>
@@ -27,7 +28,7 @@ export default function TeamSection() {
 				<p className="text-white font-light text-[10px]/[12px] md:text-[13px]/[13px] 2xl:text-[14px]/[14px] tracking-wide" >BAILARÍN Y FUNDADOR</p>
 			</div>
 			<div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/3 z-10 w-full'>
-				<h4 className='text-center text-white font-semibold text-sm  md:text-lg 2xl:text-xl tracking-[.45em] mx-auto'>TÉCNICA Y SENSIBILIDAD</h4>
+				<h3 className='text-center text-white font-semibold text-sm  md:text-lg 2xl:text-xl tracking-[.45em] mx-auto'>TÉCNICA Y SENSIBILIDAD</h3>
 				<p className='text-center text-white text-[10px]/[11px] md:text-[12px]/[13px] 2xl:text-[14px]/[15px] font-light tracking-widest w-[50vw] md:w-[20vw] 2xl:w-[18vw] mx-auto'>FUSIONA <span className='font-bold text-sm md:text-lg 2xl:text-xl'>19</span> AÑOS DE EXPERIENCIA EN MOVIMIENTO CON UNA PASIÓN POR LA DANZA Y EL <span className='font-bold'>PILATES</span></p>
 			</div>
 			<Email className='absolute bottom-30 left-1/15' />

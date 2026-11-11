@@ -6,6 +6,8 @@ export default function HomeSection() {
 
 	return (
 		<div className="relative z-20 min-h-[100svh] w-full px-4 grid grid-rows-[auto_1fr] md:grid-rows-[34svh_1fr]">
+			{/* The visible title is the logo image; this h1 gives search engines and screen readers the page title. */}
+			<h1 className="sr-only">Acero Pilates Studio, estudio de Pilates en Carabanchel, Madrid</h1>
 			<div className="mt-5 md:mt-0 md:row-span-3 place-self-center w-full">
 				<div className="relative flex min-h-[34svh] flex-col items-center justify-start md:hidden">
 					<div className="relative w-full max-w-[540px]">
@@ -14,6 +16,7 @@ export default function HomeSection() {
 							alt="Pilates Studio Dot Matrix"
 							width={1920}
 							height={822}
+							sizes="(min-width: 768px) 1px, min(100vw, 540px)"
 							priority
 							className="hero-logo-mobile-main relative z-20 w-full"
 						/>
@@ -23,6 +26,7 @@ export default function HomeSection() {
 							alt="Acero Pilates Studio"
 							width={1920}
 							height={822}
+							sizes="(min-width: 768px) 1px, min(100vw, 500px)"
 							className="hero-logo-mobile-echo absolute inset-x-0 top-[72%] z-10 mx-auto w-full max-w-[500px]"
 						/>
 					</div>
@@ -36,6 +40,7 @@ export default function HomeSection() {
 								alt="Acero Pilates Studio"
 								width={1920}
 								height={822}
+								sizes="(max-width: 767px) 1px, (min-width: 1280px) 660px, 760px"
 								priority
 								className="hero-logo-main relative z-10 w-full"
 							/>
@@ -45,6 +50,7 @@ export default function HomeSection() {
 								alt="Pilates Studio Dot Matrix"
 								width={1920}
 								height={822}
+								sizes="(max-width: 767px) 1px, (min-width: 1280px) 660px, 760px"
 								className="hero-logo-ghost absolute inset-0 z-20 w-full"
 							/>
 						</div>

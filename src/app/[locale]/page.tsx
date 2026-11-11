@@ -20,7 +20,7 @@ export default function Home({ params }: { params: Promise<{ locale: string }> }
 	const { locale } = use(params);
 
 	setRequestLocale(locale);
-	preload("/images/poster-bg.webp", {
+	preload("/images/newBgHome-poster.webp", {
 		as: "image",
 		fetchPriority: "high",
 	});
@@ -33,9 +33,10 @@ export default function Home({ params }: { params: Promise<{ locale: string }> }
 			<FixedPopover />
 			<FullScreenVideo
 				id="home"
-				bgVideoMobile="/images/bgHome.mp4"
-				bgVideoDesktop="/images/bgHome.mp4"
-				posterImage="/images/poster-bg.webp"
+				bgVideoMobile="/images/newBgHome-mobile.mp4"
+				bgVideoDesktop="/images/newBgHome-desktop.mp4"
+				bgVideoDesktopAv1="/images/newBgHome-desktop-av1.mp4"
+				posterImage="/images/newBgHome-poster.webp"
 				bgOverlay="bg-black/35">
 				<HomeSection />
 			</FullScreenVideo>
@@ -63,6 +64,7 @@ export default function Home({ params }: { params: Promise<{ locale: string }> }
 						alt="Pilates Studio Dot Matrix"
 						width={1920}
 						height={822}
+						sizes="(min-width: 1280px) 500px, min(100vw, 600px)"
 						className="w-full max-w-[600px] xl:max-w-[500px] mx-auto opacity-70"
 					/>
 				</div>
@@ -71,8 +73,9 @@ export default function Home({ params }: { params: Promise<{ locale: string }> }
 					<Image
 						src="/logos/circle-metal.png"
 						alt="Pilates Studio Dot Matrix"
-						width={1920}
-						height={822}
+						width={5313}
+						height={2909}
+						sizes="min(100vw, 600px)"
 						className="w-full max-w-[600px] mx-auto opacity-70"
 					/>
 				</div>

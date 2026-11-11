@@ -6,6 +6,8 @@ type FullScreenVideoProps = {
 	id?: string;
 	bgVideoMobile: string;
 	bgVideoDesktop: string;
+	/** Optional AV1 version of the desktop video; browsers that can't decode it fall back to bgVideoDesktop. */
+	bgVideoDesktopAv1?: string;
 	bgOverlay?: string;
 	alt?: string;
 	posterImage?: string;
@@ -16,6 +18,7 @@ export default function FullScreenVideo({
 	id,
 	bgVideoMobile,
 	bgVideoDesktop,
+	bgVideoDesktopAv1,
 	bgOverlay,
 	alt = "Fondo",
 	posterImage = "/images/bgHome-poster.webp",
@@ -99,6 +102,13 @@ export default function FullScreenVideo({
 						media="(max-width: 767px)"
 						type="video/mp4"
 					/>
+					{bgVideoDesktopAv1 && (
+						<source
+							src={bgVideoDesktopAv1}
+							media="(min-width: 768px)"
+							type='video/mp4; codecs="av01.0.08M.08"'
+						/>
+					)}
 					<source
 						src={bgVideoDesktop}
 						media="(min-width: 768px)"
