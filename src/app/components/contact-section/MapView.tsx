@@ -1,11 +1,15 @@
 "use client"
 
 import "maplibre-gl/dist/maplibre-gl.css"
+import { setWorkerUrl } from "maplibre-gl"
 import { useState } from "react"
 import Map, { AttributionControl, Marker, NavigationControl, Popup } from "react-map-gl/maplibre"
 
 // OpenFreeMap: free vector tiles, no API key, commercial use allowed.
 const MAP_STYLE = "https://tiles.openfreemap.org/styles/positron"
+
+// MapLibre 6 loads its worker from a separate file the bundler does not pick up on its own.
+setWorkerUrl(new URL("maplibre-gl/dist/maplibre-gl-worker.mjs", import.meta.url).href)
 
 const POSITION = { latitude: 40.391887, longitude: -3.7240774 }
 
