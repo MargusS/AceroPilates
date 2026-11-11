@@ -12,7 +12,7 @@ export default function Instagram() {
 						height={20}
 						className="pt-[1px] pb-0 lg:w-[25px] lg:h-[25px]"
 					/>
-					<h4 className="font-semibold text-white text-[12px] 2xl:text-sm tracking-[.6em] ">aceropilates</h4>
+					<span className="font-semibold text-white text-[12px] 2xl:text-sm tracking-[.6em] ">aceropilates</span>
 				</Link>
 		</div>
 	);

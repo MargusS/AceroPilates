@@ -6,6 +6,8 @@ export default function HomeSection() {
 
 	return (
 		<div className="relative z-20 min-h-[100svh] w-full px-4 grid grid-rows-[auto_1fr] md:grid-rows-[34svh_1fr]">
+			{/* The visible title is the logo image; this h1 gives search engines and screen readers the page title. */}
+			<h1 className="sr-only">Acero Pilates Studio, estudio de Pilates en Carabanchel, Madrid</h1>
 			<div className="mt-5 md:mt-0 md:row-span-3 place-self-center w-full">
 				<div className="relative flex min-h-[34svh] flex-col items-center justify-start md:hidden">
 					<div className="relative w-full max-w-[540px]">
