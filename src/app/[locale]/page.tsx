@@ -20,7 +20,7 @@ export default function Home({ params }: { params: Promise<{ locale: string }> }
 	const { locale } = use(params);
 
 	setRequestLocale(locale);
-	preload("/images/poster-bg.webp", {
+	preload("/images/newBgHome-poster.webp", {
 		as: "image",
 		fetchPriority: "high",
 	});
@@ -33,9 +33,10 @@ export default function Home({ params }: { params: Promise<{ locale: string }> }
 			<FixedPopover />
 			<FullScreenVideo
 				id="home"
-				bgVideoMobile="/images/bgHome.mp4"
-				bgVideoDesktop="/images/bgHome.mp4"
-				posterImage="/images/poster-bg.webp"
+				bgVideoMobile="/images/newBgHome-mobile.mp4"
+				bgVideoDesktop="/images/newBgHome-desktop.mp4"
+				bgVideoDesktopAv1="/images/newBgHome-desktop-av1.mp4"
+				posterImage="/images/newBgHome-poster.webp"
 				bgOverlay="bg-black/35">
 				<HomeSection />
 			</FullScreenVideo>
