@@ -29,7 +29,7 @@ export default function FullScreenImage({
 		quality: 90
 	});
 
-	// Props para mobile (ejemplo: 750x1334)
+	// Props para mobile (ejemplo: 750x1334). Same quality as desktop: q100 tripled the weight with no visible gain.
 	const {
 		props: { srcSet: mobileSrcSet, ...mobileRest }
 	} = getImageProps({
@@ -38,7 +38,7 @@ export default function FullScreenImage({
 		width: 1500,
 		height: 2760,
 		sizes: "100vw",
-		quality: 100
+		quality: 90
 	});
 	return (
 		<section id={id} className="relative w-full h-screen">

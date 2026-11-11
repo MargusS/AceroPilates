@@ -64,6 +64,7 @@ export default function Home({ params }: { params: Promise<{ locale: string }> }
 						alt="Pilates Studio Dot Matrix"
 						width={1920}
 						height={822}
+						sizes="(min-width: 1280px) 500px, min(100vw, 600px)"
 						className="w-full max-w-[600px] xl:max-w-[500px] mx-auto opacity-70"
 					/>
 				</div>
@@ -72,8 +73,9 @@ export default function Home({ params }: { params: Promise<{ locale: string }> }
 					<Image
 						src="/logos/circle-metal.png"
 						alt="Pilates Studio Dot Matrix"
-						width={1920}
-						height={822}
+						width={5313}
+						height={2909}
+						sizes="min(100vw, 600px)"
 						className="w-full max-w-[600px] mx-auto opacity-70"
 					/>
 				</div>

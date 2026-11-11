@@ -16,6 +16,7 @@ export default function HomeSection() {
 							alt="Pilates Studio Dot Matrix"
 							width={1920}
 							height={822}
+							sizes="(min-width: 768px) 1px, min(100vw, 540px)"
 							priority
 							className="hero-logo-mobile-main relative z-20 w-full"
 						/>
@@ -25,6 +26,7 @@ export default function HomeSection() {
 							alt="Acero Pilates Studio"
 							width={1920}
 							height={822}
+							sizes="(min-width: 768px) 1px, min(100vw, 500px)"
 							className="hero-logo-mobile-echo absolute inset-x-0 top-[72%] z-10 mx-auto w-full max-w-[500px]"
 						/>
 					</div>
@@ -38,6 +40,7 @@ export default function HomeSection() {
 								alt="Acero Pilates Studio"
 								width={1920}
 								height={822}
+								sizes="(max-width: 767px) 1px, (min-width: 1280px) 660px, 760px"
 								priority
 								className="hero-logo-main relative z-10 w-full"
 							/>
@@ -47,6 +50,7 @@ export default function HomeSection() {
 								alt="Pilates Studio Dot Matrix"
 								width={1920}
 								height={822}
+								sizes="(max-width: 767px) 1px, (min-width: 1280px) 660px, 760px"
 								className="hero-logo-ghost absolute inset-0 z-20 w-full"
 							/>
 						</div>

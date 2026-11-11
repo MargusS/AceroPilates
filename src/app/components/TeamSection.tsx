@@ -12,6 +12,7 @@ export default function TeamSection() {
 					alt="Pilates Studio Dot Matrix"
 					width={1920}
 					height={822}
+					sizes="(min-width: 768px) min(40vw, 600px), min(70vw, 512px)"
 					className="w-[70vw] max-w-lg md:w-[40vw] md:max-w-[600px]"
 				/>
 			</div>
