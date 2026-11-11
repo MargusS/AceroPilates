@@ -72,6 +72,8 @@ const tiny = localFont({
 export const metadata: Metadata = {
 	title: "Acero Pilates Studio",
 	description: "Estudio de Pilates en Madrid - Clases presenciales y online",
+	// Stop mobile browsers (iOS Safari) from turning the phone number into a tappable link.
+	formatDetection: { telephone: false },
 };
 
 export default async function RootLayout({ children, params }: Props) {

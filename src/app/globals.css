@@ -138,6 +138,16 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Phone numbers are plain text: neutralize any tel: link a browser injects on its own. */
+a[href^="tel:"],
+a[x-apple-data-detectors] {
+  pointer-events: none;
+  cursor: text;
+  color: inherit !important;
+  text-decoration: none !important;
+  font: inherit !important;
+}
+
 body {
   font-family: var(--font-sans);
 }
